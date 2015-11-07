@@ -5,6 +5,15 @@ body {
   font-family: sans-serif; 
 }
 
+h1 {
+  font-family: Quicksand;
+  text-align: center;
+}
+
+p {
+  font-family: "Open Sans";
+}
+
 header {
   @include pad (default);
 }
