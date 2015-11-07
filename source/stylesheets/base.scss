@@ -8,6 +8,10 @@ h1 {
   font-family: Quicksand;
   text-align: center;
 }
+h2 {
+  font-family: Quicksand;
+  text-align: center;
+}
 
 p {
   font-family: "Open Sans";
@@ -16,6 +20,7 @@ p {
 header {
   @include outer-container;
   @include pad (default 0);
+  min-height: 500px;
 }
 
 .avatar {
@@ -53,4 +58,26 @@ header {
   to {
     -webkit-transform: scale(1);
   }
+}
+
+section {
+  @include outer-container;
+  min-height: 300px;
+
+}
+
+  
+  #about {
+    background: #f00;
+  }
+  #work {
+    background: #0f0;
+  }
+  #contact {
+    background: #00f;
+  }
+
+footer {
+  @include outer-container;
+  height: 300px;
 }
