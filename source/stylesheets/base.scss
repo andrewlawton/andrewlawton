@@ -14,13 +14,15 @@ p {
 }
 
 header {
-  @include pad (default);
+  @include outer-container;
+  @include pad (default 0);
 }
 
 .avatar {
   display: block;
   line-height: normal;
   overflow: hidden;
+  text-align: center;
   text-overflow: ellipsis;
   white-space: nowrap;
   img {
