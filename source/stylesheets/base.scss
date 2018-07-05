@@ -1,15 +1,17 @@
 body {
-  font: 16px/1.5 Quicksand, "Open Sans", sans-serif; 
+  font: 16px / 1.5 Quicksand,
+  "Open Sans",
+  sans - serif;
   background: #ffffff;
   color: #333333;
 }
 
 h1 {
-  font-family: Quicksand;
+  font-family: Poppins;
   text-align: center;
 }
 h2 {
-  font-family: Quicksand;
+  font-family: Poppins;
   text-align: center;
 }
 
@@ -34,6 +36,8 @@ header {
     border-radius: 100%;
     display: inline-block;
     vertical-align: middle;
+    height: 200px;
+    width: 200px;
   }
 }
 
@@ -65,15 +69,30 @@ section {
   min-height: 300px;
 }
 
+
+.grid {
+  display: grid;
+ // grid-template-columns: 1fr 1fr;
+  //grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  //grid-auto-rows: 2em;
+  grid-gap: .5em;
+  column-gap: 10px;
+}
+
+.grid article {
+  padding: 1em;
+}
   
   #about {
     background: #f00;
   }
+
   #work {
     background: #0f0;
   }
   #contact {
-    background: #00f;
+      background: #00f;
   }
 
 footer {
