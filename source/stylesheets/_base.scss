@@ -1,0 +1,101 @@
+html {
+  height: 100%;
+}
+
+body {
+  font: 16px / 1.5 Quicksand, "Open Sans", sans-serif;
+  background: $body-background;
+  color: #333333;
+}
+
+h1 {
+  font-family: Poppins;
+  text-align: center;
+}
+
+h2 {
+  font-family: Poppins;
+  text-align: center;
+}
+
+p {
+  font-family: "Open Sans";
+}
+
+header {
+  background: $header-background;
+  min-height: 500px;
+}
+
+.avatar {
+  text-align: center;
+  img {
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.avatar {
+  -webkit-animation-name: avatar;
+  -webkit-animation-duration: .9s; }
+
+@-webkit-keyframes avatar {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   -webkit-transform: scale(0);
+   opacity: 0;
+  }
+  82.5% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+section {
+  //@include outer-container;
+  min-height: 300px;
+}
+
+
+.grid {
+  display: grid;
+ // grid-template-columns: 1fr 1fr;
+  //grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  //grid-auto-rows: 2em;
+  grid-gap: .5em;
+  column-gap: 10px;
+}
+
+.grid article {
+  padding: 1em;
+}
+  
+  #about {
+    background: #f00;
+  }
+
+  #work {
+    background: #0f0;
+  }
+  #contact {
+      background: #00f;
+  }
+
+footer {
+  //@include outer-container;
+}
+
+
+
+
