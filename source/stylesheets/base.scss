@@ -1,8 +1,10 @@
+html {
+  height: 100%;
+}
+
 body {
-  font: 16px / 1.5 Quicksand,
-  "Open Sans",
-  sans - serif;
-  background: #ffffff;
+  font: 16px / 1.5 Quicksand, "Open Sans", sans-serif;
+  background: $body-background;
   color: #333333;
 }
 
@@ -10,6 +12,7 @@ h1 {
   font-family: Poppins;
   text-align: center;
 }
+
 h2 {
   font-family: Poppins;
   text-align: center;
@@ -20,18 +23,12 @@ p {
 }
 
 header {
-  @include outer-container;
-  @include pad (default 0);
+  background: $header-background;
   min-height: 500px;
 }
 
 .avatar {
-  display: block;
-  line-height: normal;
-  overflow: hidden;
   text-align: center;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   img {
     border-radius: 100%;
     display: inline-block;
@@ -97,5 +94,8 @@ section {
 
 footer {
   @include outer-container;
-  height: 300px;
 }
+
+
+
+
