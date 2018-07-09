@@ -26,8 +26,11 @@ p {
 }
 
 header {
+  align-items: center;
   background: $header-background;
   color: $header-color;
+  display: flex;
+  justify-content: center;
   min-height: 500px;
 }
 
