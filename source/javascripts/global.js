@@ -40,3 +40,33 @@ $(function() {
 	});
 
 });
+
+
+$(function() {
+		// validate the comment form when it is submitted
+		// $("#contactForm").validate();
+
+		// validate signup form on keyup and submit
+		$("#contactForm").validate({
+			rules: {
+				fullname: {
+					required: true,
+					minlength: 2
+				},
+				email: {
+					required: true,
+					email: true
+				},
+				comment: {
+					required: true,
+					minlength: 2
+				},
+			},
+			messages: {
+				fullname: "Please enter your full name",
+				email: "Please enter a valid email address",
+				comment: "Please add a comment"
+			}
+		});
+
+});

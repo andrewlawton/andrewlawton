@@ -1,0 +1,66 @@
+// FORM
+
+fieldset {
+  border: none;
+  margin: 0 0 2em 0;
+  padding: 0;
+  position: relative;
+  clear: both;
+}
+legend {
+  display: none;
+}
+.field {
+  margin: 0 0 1em 0;
+  padding: 0 .5em;
+  label {
+    display: block;
+    font-size: .80em;
+    font-weight: bold;
+    margin-bottom: .5em;
+    span.required {
+      color: #f00;
+      margin-right: .25em;
+    }
+  }
+  a {
+    font-size: .80em;
+  }
+  input+label {
+    display: inline;
+    font-weight: normal;
+  }
+  input[type=text], input[type=email], input[type=tel], .field input[type="password"], textarea {
+    padding: .5em;
+    font-family: inherit;
+    width: 100%;
+  }
+  input[type="text"],.field input[type="password"], .field textarea {
+    border: 1px solid #CCC;
+    border-radius: 3px;
+  }
+  textarea {
+    border: 1px solid #CCC;
+    height: 200px;
+    resize: none;
+  }
+}
+
+label.error {
+  color: #fc1049;
+  display: block;
+  font-size: .85em;
+  font-weight: normal;
+  margin-top: .5em;
+  width: auto;
+  
+}
+
+input.error, textarea.error  {
+  border: 1px solid #fc1049 !important;
+}
+
+input:focus, textarea:focus {
+  outline: 0;
+}
+

@@ -1,7 +1,7 @@
 ---
 title: Andrew Lawton - Front-End Web Design &amp; Development
 metaDescription: Andrew Lawton Front-End Web Design and Development
-metaKeywords: Andrew Lawton, Andrew, Lawton, Web Design, Web Development, user interface design, HTML, HTML5, CSS, CSS3, front-end, GUI, graphical user interface, interface engineer, Interface
+metaKeywords: Andrew Lawton, Andrew, Lawton, Web Design, Web Development, user interface design, HTML, HTML5, CSS, CSS3, front-end, GUI, graphical user interface, interface engineer, Interface Design
 bodyClass: home
 ---
 
@@ -40,5 +40,24 @@ bodyClass: home
   	<h2>
   		Contact Me
   	</h2>
+    <form name="frm" action="/cgi-bin/FormMail.index.pl" method="post" id="contactForm">
+      <fieldset>
+        <div class="field">
+          <label for="fullname">Full Name</label>
+          <input id="fullname" name="fullname" minlength="2" type="text" placeholder="Enter your full name" required>
+        </div>
+        <div class="field">
+          <label for="email">E-Mail (required)</label>
+          <input id="email" type="email" name="email" placeholder="name@domain.com" required>
+        </div>
+        <div class="field">
+          <label for="comment">Your comment (required)</label>
+          <textarea id="comment" name="comment" placeholder="Enter your full name" required></textarea>
+        </div>
+        <div class="field">
+          <input class="submit" type="submit" value="Submit">
+        </div>
+      </fieldset>
+    </form>
   </section>
 </main>
