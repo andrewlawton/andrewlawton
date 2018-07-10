@@ -2,7 +2,7 @@
 
 fieldset {
   border: none;
-  margin: 0 0 2em 0;
+  margin: 0 0 1em 0;
   padding: 0;
   position: relative;
   clear: both;
@@ -10,9 +10,20 @@ fieldset {
 legend {
   display: none;
 }
+
+input,
+textarea {
+  border: 1px solid #CCC;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: inherit;
+  padding: .5em;
+  width: 100%;
+}
+
 .field {
   margin: 0 0 1em 0;
-  padding: 0 .5em;
+  //padding: 0 .5em;
   label {
     display: block;
     font-size: .80em;
@@ -30,18 +41,8 @@ legend {
     display: inline;
     font-weight: normal;
   }
-  input[type=text], input[type=email], input[type=tel], .field input[type="password"], textarea {
-    padding: .5em;
-    font-family: inherit;
-    width: 100%;
-  }
-  input[type="text"],.field input[type="password"], .field textarea {
-    border: 1px solid #CCC;
-    border-radius: 3px;
-  }
   textarea {
-    border: 1px solid #CCC;
-    height: 200px;
+    height: 100px;
     resize: none;
   }
 }
