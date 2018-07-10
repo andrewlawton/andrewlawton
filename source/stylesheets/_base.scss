@@ -40,6 +40,7 @@ header {
   display: flex;
   justify-content: center;
   min-height: 500px;
+  padding: 1.5em;
   height: 100vh;
 }
 
@@ -82,6 +83,7 @@ header {
 
 section {
   min-height: 300px;
+  padding: 1.5em;
 }
 
 
@@ -125,11 +127,17 @@ section {
   user-select: none;
   vertical-align: middle;
   -webkit-font-smoothing: antialiased;
+  width: auto;
 }
   
-  #about {
-    //background: #ed3e44;
+  #about .intro {
+    font-size: 1.5em;
+    line-height: normal;
+    margin-bottom: 2em;
+    text-align: center;
+
   }
+
 
   #work {
     //background: #0f0;
@@ -137,6 +145,9 @@ section {
   #contact {
       //background: #00f;
   }
+
+
+
 
 .icon {
   background-color: #ffffff;
@@ -169,6 +180,43 @@ section {
   &.code {
     left: 25px;
     bottom: -20px;
+  }
+}
+
+
+
+  .skill {
+    //width: 33%;
+    margin: 0 0 2em 0;
+  }
+
+@media(min-width: 700px) {
+  // body {
+  //   display:none;
+  // }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+
+  .container {
+    grid-column: 2/4;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .skill {
+    width: 33%;
+    margin: 0 1em 2em 0;
+  }
+
+  .skill:last-child {
+    margin-right: 0;
   }
 }
 
