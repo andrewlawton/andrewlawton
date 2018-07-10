@@ -1,5 +1,12 @@
-footer {
+footer[role=contentinfo] {
   background: $footer-background;
+  color: #fff;
+  font-size: .85em;
+  padding: .5em;
+  text-align: center;
+  img {
+  	vertical-align: top;
+  }
 }
 
 
