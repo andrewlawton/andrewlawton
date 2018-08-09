@@ -13,9 +13,12 @@ img.responsive {
 }
 
 body {
-  font: 16px/1.5 "Open Sans", sans-serif;
   background: $body-background;
+  display: grid;
   color: #333;
+  font: 16px/1.5 "Open Sans", sans-serif;
+  grid-template-rows: 1fr auto;
+  min-height: 100%;
 }
 
 h1 {
