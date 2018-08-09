@@ -1,0 +1,47 @@
+header {
+  align-items: center;
+  background: $primary-color;
+  color: $header-color;
+  display: flex;
+  justify-content: center;
+  min-height: 500px;
+  padding: 1.5em;
+  height: 100vh;
+}
+
+.avatar {
+  text-align: center;
+  img {
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 150px;
+    width: 150px;
+
+    border: 2px solid #fff;
+    //padding: 4px;
+  }
+}
+
+.avatar {
+  -webkit-animation-name: avatar;
+  -webkit-animation-duration: .9s; }
+
+@-webkit-keyframes avatar {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   -webkit-transform: scale(0);
+   opacity: 0;
+  }
+  82.5% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}

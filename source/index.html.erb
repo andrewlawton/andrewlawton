@@ -5,18 +5,9 @@ metaKeywords: Andrew Lawton, Andrew, Lawton, Web Design, Web Development, user i
 bodyClass: home
 ---
 
-<header class="grid" id="hero" role="banner">
-  <div class="container">
-    <div class="avatar">
-  	<%= image_tag("avatar.jpg", height:'141', width:'127', alt:"Andrew Lawton") %>
-      <h1>
-  	    Front-End Designer &amp; Developer
-      </h1>
-    </div>
-  </div>
-</header>
+<%= partial "partials/header" %>
 
-<main role="main">
+<main role="main" id="content">
   <section id="about">
     <h2>
       About Me
@@ -65,28 +56,30 @@ bodyClass: home
   		Recent Work
   	</h2>
   </section>
-  <section id="contact">
-  	<h2>
-  		Contact Me
-  	</h2>
-    <form name="frm" action="/cgi-bin/FormMail.index.pl" method="post" id="contactForm">
-      <fieldset>
-        <div class="field">
-          <label for="fullname">Full Name</label>
-          <input id="fullname" name="fullname" minlength="2" type="text" placeholder="Enter your full name" required>
-        </div>
-        <div class="field">
-          <label for="email">E-Mail (required)</label>
-          <input id="email" type="email" name="email" placeholder="name@domain.com" required>
-        </div>
-        <div class="field">
-          <label for="comment">Your comment (required)</label>
-          <textarea id="comment" name="comment" placeholder="Enter your full name" required></textarea>
-        </div>
-        <div class="field center">
-          <input class="btn-primary" type="submit" value="Send">
-        </div>
-      </fieldset>
-    </form>
+  <section id="contact" class="grid">
+    <div class="container">
+    	<h2>
+    		Contact Me
+    	</h2>
+      <form name="frm" action="/cgi-bin/FormMail.index.pl" method="post" id="contactForm">
+        <fieldset>
+          <div class="field">
+            <label for="fullname">Full Name</label>
+            <input id="fullname" name="fullname" minlength="2" type="text" placeholder="Enter your full name" required>
+          </div>
+          <div class="field">
+            <label for="email">E-Mail (required)</label>
+            <input id="email" type="email" name="email" placeholder="name@domain.com" required>
+          </div>
+          <div class="field">
+            <label for="comment">Your comment (required)</label>
+            <textarea id="comment" name="comment" placeholder="Enter your full name" required></textarea>
+          </div>
+          <div class="field center">
+            <input class="btn-primary" type="submit" value="Send">
+          </div>
+        </fieldset>
+      </form>
+    </div>
   </section>
 </main>
