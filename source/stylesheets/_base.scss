@@ -3,6 +3,10 @@ html {
   height: 100%;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font: 16px/1.5 "Open Sans", sans-serif;
   background: $body-background;
@@ -80,14 +84,14 @@ section {
   -webkit-font-smoothing: antialiased;
   width: auto;
 }
-  
+
   #about .intro {
     font-size: 1.5em;
     line-height: normal;
     margin-bottom: 2em;
     text-align: center;
   }
-  
+
 .icon {
   background-color: #ffffff;
   border: 2px solid #999999;

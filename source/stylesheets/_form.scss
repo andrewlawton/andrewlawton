@@ -1,4 +1,4 @@
-// FORM
+// forms
 
 fieldset {
   border: none;
@@ -14,7 +14,6 @@ legend {
 input,
 textarea {
   border: 1px solid #CCC;
-  box-sizing: border-box;
   border-radius: 3px;
   font-family: inherit;
   padding: .5em;
@@ -53,7 +52,7 @@ label.error {
   font-weight: normal;
   margin-top: .5em;
   width: auto;
-  
+
 }
 
 input.error, textarea.error  {
