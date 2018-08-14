@@ -24,7 +24,7 @@ $(function() {
   });
 
   // show dropdown onclick
-  $('.nav-container').on('click', function(e) {
+  $('.menu').on('click', function(e) {
     e.preventDefault();
     var winwidth = $(window).innerWidth();
     if (winwidth < 768) {
