@@ -15,7 +15,7 @@ bodyClass: home
     <p class="intro">
       Hi! I'm a Front-End Web designer and developer with over 15 years of professional experience creating standards compliant web sites that utilize the latest design methods and technologies.
     </p>
-    <div class="skills center">
+    <div class="container grid skills center">
       <div class="skill">
         <div class="icon">
           <svg class="svg-icon display">
@@ -99,16 +99,16 @@ bodyClass: home
     </div>
     <!-- // end container -->
   </section>
-  <section id="contact" class="grid">
-    <div class="container">
-    	<h2>
-    		Contact Me
-    	</h2>
+  <section id="contact" class="get-in-touch">
+    <h2>
+      Contact Me
+    </h2>
+    <div class="container grid">
       <form name="frm" action="/cgi-bin/FormMail.index.pl" method="post" id="contactForm">
         <fieldset>
           <div class="field">
-            <label for="fullname">Full Name</label>
-            <input id="fullname" name="fullname" minlength="2" type="text" placeholder="Enter your full name" required>
+            <label for="name">Name</label>
+            <input id="name" name="fullname" minlength="2" type="text" placeholder="Enter your full name" required>
           </div>
           <div class="field">
             <label for="email">E-Mail (required)</label>
