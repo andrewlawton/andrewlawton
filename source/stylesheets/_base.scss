@@ -39,6 +39,7 @@ h3 {
 
 p {
   font-family: "Open Sans";
+  margin: 0 0 1em 0;
 }
 
 main {
@@ -46,7 +47,6 @@ main {
 }
 
 section {
-  min-height: 300px;
   padding: 1.5em;
 }
 
@@ -54,21 +54,6 @@ img.responsive {
   height: auto;
   width: 100%;
 }
-
-
-// .grid {
-//   display: grid;
-//  // grid-template-columns: 1fr 1fr;
-//   //grid-template-columns: 1fr 1fr;
-//   grid-template-columns: repeat(2, 1fr);
-//   //grid-auto-rows: 2em;
-//   grid-gap: .5em;
-//   column-gap: 10px;
-// }
-
-// .grid article {
-//   padding: 1em;
-// }
 
 .btn-primary {
   -webkit-appearance: none;
@@ -97,7 +82,52 @@ img.responsive {
   width: auto;
 }
 
-#about .intro {
+.logo {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  width: auto;
+}
+
+.logo .circle {
+  background: #ed3e44;
+  border-radius: 100%;
+  display: inline-block;
+  height: 38px;
+  vertical-align: middle;
+  width: 38px;
+}
+
+.logo .circle .inner {
+  border: 2px solid #fff;
+  border-radius: 100%;
+  color: #fff;
+  line-height: .70em;
+  position: absolute;
+  height: 34px;
+  width: 34px;
+  left: 2px;
+  top: 2px;
+}
+
+.logo .circle .letter {
+  font-family: Poppins;
+  font-size: 1.80em;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+}
+
+.logo .name {
+  color: $primary-color;
+  font-family: Poppins;
+  font-size: 1em;
+  font-weight: 700;
+  margin-left: .25em;
+}
+
+
+.home .intro {
   font-size: 1.5em;
   line-height: normal;
   margin-bottom: 2em;
@@ -125,8 +155,8 @@ img.responsive {
   position: absolute;
   width: 62px;
   &.display {
-    left: 25px;
-    bottom: -20px;
+    left: 22px;
+    bottom: -25px;
   }
   &.cogs {
     left: 25px;
@@ -136,10 +166,6 @@ img.responsive {
     left: 25px;
     bottom: -20px;
   }
-}
-
-.skill {
-  margin: 0 0 2em 0;
 }
 
 .recent-work {
@@ -222,35 +248,130 @@ img.responsive {
   top: 80%;
 }
 
+.work main {
+  margin-top: 4em;
+}
+
+.work header {
+  display: block;
+}
+
+.work .intro {
+  font-size: 2em;
+}
+
+.work figure {
+  max-width: 980px;
+}
+
+
 @media(min-width: 768px) {
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+
+  .logo {
+    left: 20px;
+    top: 13px;
   }
 
-  .container {
+  .logo .circle {
+    height: 45px;
+    width: 45px;
+  }
+
+  .logo .circle .inner {
+    height: 41px;
+    width: 41px;
+    left: 2px;
+    top: 2px;
+  }
+
+  .logo .circle .letter {
+    font-size: 2.25em;
+    left: 6px;
+    top: 10px;
+  }
+
+  .logo .name {
+    display: inline-block;
+    font-size: 1.25em;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 25em));
+  }
+
+  #hero .avatar {
     grid-column: 2/4;
   }
 
   .skills {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .skill {
-    width: 33%;
-    margin: 0 2em 2em 0;
-  }
-
-  .skill:last-child {
-    margin-right: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
   }
 
   .recent-work  {
-   display: grid;
-   grid-gap: 2em;
-   grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
-   justify-items: center;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    justify-items: center;
+  }
+
+  .work .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 2em;
+  }
+
+  .work .media {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img content";
+  }
+
+  .work .media .image {
+    grid-area: img;
+  }
+
+  .work .media .image img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .work .media .description {
+    grid-area: content;
+  }
+
+  .work header {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .work header .hero {
+    height: auto;
+    object-fit: cover;
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .work h2.intro {
+    margin: 0 0 2em 0;
+    padding: 0 2em;
+  }
+
+  .work .media.reverse {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "content img";
+  }
+
+  .get-in-touch .grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .get-in-touch .grid form {
+    grid-column: 4 / span 6;
   }
 
 }
