@@ -11,7 +11,7 @@
     <%= favicon_tag 'favicon.ico' %>
     <%= stylesheet_link_tag "application" %>
     <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Poppins|Open+Sans" %>
-    
+
   </head>
 
   <body class="<%= current_page.data.bodyClass %>">
@@ -19,6 +19,11 @@
     <%= partial "partials/navigation" %>
     <%= yield %>
     <%= partial "partials/footer" %>
-    <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js", "global", "jquery.validate.min" %>
+    <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js", "global", "jquery.aniview", "jquery.validate.min" %>
+    <script>
+      $(function() {
+        $('.animate').AniView();
+      });
+    </script>
   </body>
 </html>
