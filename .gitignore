@@ -15,6 +15,9 @@ vendor/bundle
 /build
 build
 
+# Ignore node_modules directory
+/node_modules
+
 # Ignore cache
 /.sass-cache
 /.cache
