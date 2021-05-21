@@ -1,60 +1,60 @@
-###
-# Compass
-###
+# Activate and configure extensions
+# https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+activate :autoprefixer do |prefix|
+  prefix.browsers = "last 2 versions"
+end
 
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
-#  :which_fake_page => "Rendering a fake page with a local variable" }
-
-###
-# Helpers
-###
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Reload the browser automatically whenever files change
+# set :css_dir, 'stylesheets'
+# set :js_dir, 'javascripts'
+# set :images_dir, 'images'
 
 activate :livereload
 
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? "yarn run build" : "yarn run start",
+  source: '.tmp/dist',
+  latency: 1
+
+# Asset pipeline directory path for js and css based on webpack.config.js
+
+config[:js_dir] = '/assets/javascripts'
+config[:css_dir] = '/assets/stylesheets'
+config[:images_dir] = '/images'
+
+# config[:fonts_dir] = 'assets/fonts'
+# set :fonts_dir, '/assets/fonts'
+
+# Layouts
+# https://middlemanapp.com/basics/layouts/
+
+# Per-page layout changes
+page '/*.xml', layout: false
+page '/*.json', layout: false
+page '/*.txt', layout: false
+
+# With alternative layout
+# page '/path/to/file.html', layout: 'other_layout'
+
+# Proxy pages
+# https://middlemanapp.com/advanced/dynamic-pages/
+
+# proxy(
+#   '/this-page-has-no-template.html',
+#   '/template-file.html',
+#   locals: {
+#     which_fake_page: 'Rendering a fake page with a local variable'
+#   },
+# )
+
+# Helpers
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
-
-set :css_dir, 'stylesheets'
-
-set :js_dir, 'javascripts'
-
-set :images_dir, 'images'
-
-set :relative_links, true
+# https://middlemanapp.com/basics/helper-methods/
 
 # Build-specific configuration
+# https://middlemanapp.com/advanced/configuration/#environment-specific-settings
+
 configure :build do
   # For example, change the Compass output style for deployment
   # activate :minify_css
