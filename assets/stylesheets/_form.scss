@@ -1,0 +1,65 @@
+// forms
+
+fieldset {
+  border: none;
+  margin: 0 0 1em 0;
+  padding: 0;
+  position: relative;
+  clear: both;
+}
+legend {
+  display: none;
+}
+
+input,
+textarea {
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  font-family: inherit;
+  padding: .5em;
+  width: 100%;
+}
+
+.field {
+  margin: 0 0 1em 0;
+  label {
+    display: block;
+    font-size: .80em;
+    font-weight: bold;
+    margin-bottom: .5em;
+    span.required {
+      color: #f00;
+      margin-right: .25em;
+    }
+  }
+  a {
+    font-size: .80em;
+  }
+  input+label {
+    display: inline;
+    font-weight: normal;
+  }
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+}
+
+label.error {
+  color: #fc1049;
+  display: block;
+  font-size: .85em;
+  font-weight: normal;
+  margin-top: .5em;
+  width: auto;
+
+}
+
+input.error, textarea.error  {
+  border: 1px solid #fc1049 !important;
+}
+
+input:focus, textarea:focus {
+  outline: 0;
+}
+
