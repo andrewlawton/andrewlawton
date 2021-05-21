@@ -4,11 +4,11 @@
 # or operating system, you probably want to add a global ignore instead:
 # git config --global core.excludesfile ~/.gitignore_global
 
-vendor/*
+vendor/
 .bundle
 .cache
 .DS_Store
 .sass-cache
 build/
 node_modules
-.tmp/*
+.tmp/
