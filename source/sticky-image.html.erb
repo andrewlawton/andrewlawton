@@ -2,14 +2,14 @@
 title: Andrew Lawton - Front-End Web Designer &amp; Developer
 metaDescription:
 metaKeywords:
-bodyClass:
+bodyClass: sticky
 ---
 
 <!-- Swap sticky image on scroll https://codepen.io/redone75/pen/ExgwPdE -->
 
 
 <style>
-.threshold {
+/*.threshold {
   position: sticky;
   width: 100%;
   height: 1px;
@@ -60,9 +60,9 @@ h3 {
 }
 .image.active {
   opacity: 1;
-}
+}*/
 
-.locker {
+/*.locker {
   outline: 1px solid #cdcdcd;
   outline-offset: -1px;
   position: relative;
@@ -72,12 +72,14 @@ h3 {
 .locker__image {
   position: relative;
   grid-column: col-start 2/col-end 6;
-}
-.locker__image img {
-  width: auto;
-  height: 70vh;
+}*/
+/*.locker__image img {
+   width: auto;
+   height: 70vh;
   position: absolute;
   transition: all 1s ease;
+  width: 100%;
+  height: auto;
 }
 .locker__container {
   position: sticky;
@@ -113,7 +115,7 @@ h3 {
   height: auto;
   padding: 10px 20px;
   z-index: 900;
-}
+}*/
 
 </style>
 
@@ -124,10 +126,15 @@ h3 {
 <div class="locker">
   <div class="locker__image">
     <div class="locker__container">
-      <img class="image image--1" src="https://assets.codepen.io/325536/placeimg_480_720_tech.jpg">
-      <img class="image image--2" src="https://assets.codepen.io/325536/tech.jpeg">
-      <img class="image image--3" src="https://assets.codepen.io/325536/tech-2.jpeg">
-      <img class="image image--4" src="https://assets.codepen.io/325536/tech-3.jpeg">
+      <!-- <img class="image image--1" src="https://assets.codepen.io/325536/placeimg_480_720_tech.jpg"> -->
+<img class="sticky-image image--1" src="https://via.placeholder.com/400x500.png">
+<img class="sticky-image image--2" src="https://via.placeholder.com/500x300.png">
+<img class="sticky-image image--3" src="https://via.placeholder.com/500x300.png">
+<img class="sticky-image image--4" src="https://via.placeholder.com/500x300.png">
+
+      <!-- <img class="image image--2" src="https://assets.codepen.io/325536/tech.jpeg" height="200" width="600"> -->
+      <!-- <img class="image image--3" src="https://assets.codepen.io/325536/tech-2.jpeg"> -->
+      <!-- <img class="image image--4" src="https://assets.codepen.io/325536/tech-3.jpeg"> -->
     </div>
   </div>
   <div class="locker__content">
