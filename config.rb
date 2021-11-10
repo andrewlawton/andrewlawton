@@ -1,30 +1,19 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
+# activate :autoprefixer do |prefix|
+#   prefix.browsers = "last 2 versions"
+# end
+
+set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
+
+# Reload the browser automatically whenever files change
+configure :development do
+  set :domain_name, "http://localhost:4567"
+  activate :livereload
 end
-
-# set :css_dir, 'stylesheets'
-# set :js_dir, 'javascripts'
-# set :images_dir, 'images'
-
-activate :livereload
-
-activate :external_pipeline,
-  name: :webpack,
-  command: build? ? "yarn run build" : "yarn run start",
-  source: '.tmp/dist',
-  latency: 1
-
-# Asset pipeline directory path for js and css based on webpack.config.js
-
-config[:js_dir] = '/assets/javascripts'
-config[:css_dir] = '/assets/stylesheets'
-config[:images_dir] = '/images'
-
-# config[:fonts_dir] = 'assets/fonts'
-# set :fonts_dir, '/assets/fonts'
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -56,18 +45,31 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 configure :build do
-  # For example, change the Compass output style for deployment
-  # activate :minify_css
+  # "Ignore" JS and CSS so webpack has full control.
+  #ignore { |path| path =~ /\/(.*)\.js|css$/ && $1 != "all" && $1 != "vendor" }
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+
+  # For example, change the Compass output style for deployment
+  activate :minify_css
 
   # Enable cache buster
   # activate :asset_hash
 
   # Use relative URLs
   activate :relative_assets
+  config[:relative_links] = true
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+activate :external_pipeline,
+   name: :webpack,
+   command: build? ? 'npm run build' : 'npm run start',
+   source: '.tmp/dist',
+   latency: 1
+
+config[:js_dir] = 'assets/javascripts'
+config[:css_dir] = 'assets/stylesheets'
