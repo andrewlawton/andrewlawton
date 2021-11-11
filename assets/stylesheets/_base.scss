@@ -12,8 +12,9 @@ body {
   color: #333;
   display: flex;
   flex-direction: column;
-  font: 16px/1.5 "Open Sans", sans-serif;
+  font: 16px/1 "Open Sans", sans-serif;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -87,50 +88,6 @@ img.responsive {
   vertical-align: middle;
   -webkit-font-smoothing: antialiased;
   width: auto;
-}
-
-.logo {
-  position: absolute;
-  left: 10px;
-  top: 5px;
-  width: auto;
-}
-
-.logo .circle {
-  background: #ed3e44;
-  border-radius: 100%;
-  display: inline-block;
-  height: 38px;
-  vertical-align: middle;
-  width: 38px;
-}
-
-.logo .circle .inner {
-  border: 2px solid #fff;
-  border-radius: 100%;
-  color: #fff;
-  line-height: .70em;
-  position: absolute;
-  height: 34px;
-  width: 34px;
-  left: 2px;
-  top: 2px;
-}
-
-.logo .circle .letter {
-  font-family: Poppins;
-  font-size: 1.80em;
-  position: absolute;
-  top: 8px;
-  left: 5px;
-}
-
-.logo .name {
-  color: $primary-color;
-  font-family: Poppins;
-  font-size: 1em;
-  font-weight: 700;
-  margin-left: .25em;
 }
 
 
@@ -282,34 +239,6 @@ img.responsive {
 }
 
 @media(min-width: 768px) {
-
-  .logo {
-    left: 20px;
-    top: 13px;
-  }
-
-  .logo .circle {
-    height: 45px;
-    width: 45px;
-  }
-
-  .logo .circle .inner {
-    height: 41px;
-    width: 41px;
-    left: 2px;
-    top: 2px;
-  }
-
-  .logo .circle .letter {
-    font-size: 2.25em;
-    left: 6px;
-    top: 10px;
-  }
-
-  .logo .name {
-    display: inline-block;
-    font-size: 1.25em;
-  }
 
   .grid {
     display: grid;
