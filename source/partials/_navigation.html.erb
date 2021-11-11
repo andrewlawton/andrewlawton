@@ -1,29 +1,18 @@
 <nav role="navigation">
   <div class="logo">
-    <span class="circle">
-      <span class="inner">
-        <span class="letter">
-          a
-        </span>
-      </span>
-    </span>
-    <span class="name">
-      Andrew Lawton
-    </span>
+    <a href="#">
+      <span>andrew</span> <span>lawton</span>
+    </a>
   </div>
-  <div class="container">
-    <div class="menu">
-      <a href="javascript:void(0);" class="hamburger"></a>
-      <ul>
-        <li><a href="#hero">Home</a>
-        </li>
-        <li><a href="#about">About</a>
-        </li>
-        <li><a href="#work">Work</a>
-        </li>
-        <li><a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
+  <button class="menu-icon" aria-expanded="false" aria-controls="menu">
+    <span>Menu</span>
+  </button>
+  <div id="menu">
+    <ul class="menu-list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Works</a></li>
+    </ul>
   </div>
 </nav>
