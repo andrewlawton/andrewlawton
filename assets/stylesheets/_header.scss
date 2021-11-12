@@ -1,7 +1,6 @@
 header {
   align-items: center;
-  background: $primary-color;
-  color: $header-color;
+  color: var(--header-color);
   display: flex;
   justify-content: center;
   min-height: 500px;
@@ -19,7 +18,6 @@ header {
     width: 150px;
 
     border: 2px solid #fff;
-    //padding: 4px;
   }
 }
 

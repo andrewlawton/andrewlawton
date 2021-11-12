@@ -2,7 +2,7 @@ nav {
   background-color: #fff;
   color: #333;
   display: flex;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   padding: 1rem;
   position: fixed;
   width: 100%;
@@ -77,6 +77,7 @@ nav {
     &.menu-icon {
       background: url('/images/menu-icon.svg') no-repeat;
       display: block;
+      fill: #333;
       height: 26px;
       width: 26px;
       background-size: 100% 100%;

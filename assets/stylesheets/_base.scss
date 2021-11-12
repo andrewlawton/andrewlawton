@@ -8,8 +8,8 @@ html {
 }
 
 body {
-  background: $body-background;
-  color: #333;
+  background: var(--body-background);
+  color: var(--body-color);
   display: flex;
   flex-direction: column;
   font: 16px/1 "Open Sans", sans-serif;
@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-  color: $primary-color;
+  color: var(--primary-color);;
   font-family: Poppins;
   font-weight: normal;
   margin-top: 3em;
@@ -67,7 +67,7 @@ img.responsive {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: $primary-color;
+  background-color: var(--primary-color);;
   border: 1px solid #da393f;
   border-radius: 2px;
   color: #fff;
@@ -114,7 +114,7 @@ img.responsive {
 }
 
 .icon .svg-icon {
-  fill: $primary-color;
+  fill: var(--primary-color);;
   height: auto;
   position: absolute;
   width: 62px;
@@ -331,7 +331,7 @@ img.responsive {
 }
 
 a.active {
-  border-bottom: 2px solid $primary-color;
+  border-bottom: 2px solid var(--primary-color);;
 }
 
 .invisible {

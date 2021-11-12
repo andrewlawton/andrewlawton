@@ -1,5 +1,47 @@
-$body-background: #fff;
-$primary-color: #ed3e44;
-$header-color: #fff;
-$footer-background: #322f31;
+// ==============================
+// Custom properties
+// ==============================
+
+:root {
+  /* Colors */
+
+  --body-background: #fff;
+  --body-color: #333;
+  --bg-color: #f9f9f9;
+  --primary-color: #ff161f;
+  --secondary-color: #0f0;
+  --color-white: #fff;
+  --color-icon: #0d1724;
+  --muted-color: #999;
+  --link-color: #f00;
+
+  --background-primary: #ff161f;
+  --background-light: #f1f1f1;
+  --background-dark: #0d1724;
+  --background-white: #fff;
+  --background-nav: rgba(0,0,0,0.9);
+  --background-footer: #0d1724;
+
+
+  /* Typography */
+
+  --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --header-font: Montserrat;
+  --header-color: inherit;
+  --bold: 700;
+  --x-bold: 900;
+
+  /* Borders and corners */
+
+  --border-color-primary: #ff161f;
+  --border-color-white: #fff;
+  --border-color: #000;
+  --border-color-light: #ccc;
+  --border-radius: 4px;
+  --border-bottom: 1px solid #ccc;
+
+  /* Box shadows */
+
+  --box-shadow-nav: 0 2px 4px -1px rgba(0,0,0,0.25);
+}
 
