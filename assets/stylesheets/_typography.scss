@@ -1,0 +1,53 @@
+// fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@700&family=Open+Sans&family=Poppins:wght@300&family=Roboto+Slab:wght@300&family=Source+Sans+Pro&display=swap');
+
+h1 {
+  font-family: Montserrat;
+  text-align: center;
+}
+
+h2 {
+  color: var(--primary-color);;
+  font-family: Montserrat;
+  font-weight: normal;
+  margin-top: 3em;
+  text-align: center;
+}
+
+h3 {
+  //color: #333333;
+  font-family: Montserrat;
+  font-size: 1em;
+  //letter-spacing: -1px;
+  margin: 0 0 .5em 0;
+  //text-align: center;
+}
+
+p.roboto {
+  font-family: "Roboto Slab";
+  font-size: 1.25em;
+  margin: 0 0 1em 0;
+  font-weight: 700;
+}
+
+p.cardo {
+  font-family: "Cardo";
+  font-size: 1.25em;
+  margin: 0 0 1em 0;
+  font-weight: 700;
+}
+
+p.source-sans {
+  font-family: "Source Sans Pro";
+  font-size: 1.25em;
+  margin: 0 0 1em 0;
+  font-weight: 400;
+}
+
+.skills p {
+  //font-family: "Roboto Slab";
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+
+}
