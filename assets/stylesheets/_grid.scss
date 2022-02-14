@@ -1,0 +1,29 @@
+// grid
+
+.container {
+  display: grid;
+  /*set middle column to 768px 48rem x 16 (base font-size) */
+  grid-template-columns:
+    [full-start] minmax(1.5em, 1fr)
+    [main-start] minmax(0, 48em) [main-end]
+    minmax(1.5em, 1fr) [full-end];
+}
+
+@media (min-width: 62em) {
+  .container {
+    /*set middle column to 992px 62rem x 16 (base font-size) */
+    border:  1px solid #f00;
+    grid-template-columns:
+      [full-start] minmax(1.5em, 1fr)
+      [main-start] minmax(0, 62em) [main-end]
+      minmax(1.5em, 1fr) [full-end];
+  }
+}
+
+.container > * {
+  grid-column: main-start ;
+}
+
+.container > .full-bleed {
+  grid-column: full-start / full-end;
+}
