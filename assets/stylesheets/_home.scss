@@ -1,1 +1,50 @@
 // home
+
+.project {
+  overflow: hidden;
+  position:  relative;
+}
+
+.project a {
+  background: none;
+  border-bottom: none;
+  display:  block;
+  position: inherit;
+}
+
+.project a:hover {
+  background: inherit;
+  box-shadow: none;
+  transition: none;
+  color: transparent;
+}
+
+.project .name {
+  color: #fff;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-shadow: 1px 1px #111;
+  bottom: 10%;
+  width:  auto;
+  /* allow image to recieve hover event transition effect from absolute positioned element */
+  pointer-events: none;
+}
+
+// .project .text h2 {
+//   display: inline-block;
+//   margin: 0;
+//   position:  relative;
+// }
+
+.project img {
+  display: block;
+  max-height:  550px;
+  object-fit: cover;
+  width: 100%;
+  transition: all 0.8s ease;
+}
+
+.project img:hover {
+  transform:  scale(1.1);
+}
