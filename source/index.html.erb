@@ -4,125 +4,64 @@ metaDescription: Andrew Lawton Front-End Web Design and Development
 metaKeywords: Andrew Lawton, Andrew, Lawton, Web Design, Web Development, user interface design, HTML, HTML5, CSS, CSS3, front-end, GUI, graphical user interface, interface engineer, Interface Design
 bodyClass: home
 ---
-
 <%= partial "partials/header" %>
 
-<main role="main" id="content">
-  <section id="about">
-    <h2>
-      About Me
-    </h2>
-    <p class="intro">
-      Hi! I'm a Front-End Web designer and developer with over 15 years of professional experience creating standards compliant web sites that utilize the latest design methods and technologies.
-    </p>
-    <div class="container grid skills center">
-      <div class="skill">
-        <div class="icon">
-          <svg class="svg-icon display">
-            <use xlink:href="#icon-display"></use>
-          </svg>
-        </div>
-        <h3>Interface Design</h3>
-        <p>
-          I create user friendly interfaces out of complex ideas that reflect current design methods, conventions and trends.
-        </p>
+<section id="about">
+  <h2>
+    About Me
+  </h2>
+  <p class="intro">
+    Hi! I'm a Front-End Web designer and developer with over 15 years of professional experience creating standards compliant web sites that utilize the latest design methods and technologies.
+  </p>
+  <div class="container grid skills center">
+    <div class="skill">
+      <div class="icon">
+        <svg class="svg-icon display">
+          <use xlink:href="#icon-display"></use>
+        </svg>
       </div>
-      <div class="skill">
-        <div class="icon">
-          <svg class="svg-icon code">
-            <use xlink:href="#icon-code"></use>
-          </svg>
-        </div>
-        <h3>HTML and CSS</h3>
-        <p>
-          I hand code all page structure and CSS. I write standards compliant code that is well abstracted, clean and valid.
-        </p>
+      <h3>Interface Design</h3>
+      <p>
+        I create user friendly interfaces out of complex ideas that reflect current design methods, conventions and trends.
+      </p>
+    </div>
+    <div class="skill">
+      <div class="icon">
+        <svg class="svg-icon code">
+          <use xlink:href="#icon-code"></use>
+        </svg>
       </div>
-      <div class="skill">
-        <div class="icon">
-          <svg class="svg-icon cogs">
-            <use xlink:href="#icon-cogs"></use>
-          </svg>
-        </div>
-        <h3>Quality Assurance</h3>
-        <p>
-          From the start of coding to release I make sure the integrity of the design is maintained across multiple platforms and browsers.
-        </p>
+      <h3>HTML and CSS</h3>
+      <p>
+        I hand code all page structure and CSS. I write standards compliant code that is well abstracted, clean and valid.
+      </p>
+    </div>
+    <div class="skill">
+      <div class="icon">
+        <svg class="svg-icon cogs">
+          <use xlink:href="#icon-cogs"></use>
+        </svg>
+      </div>
+      <h3>Quality Assurance</h3>
+      <p>
+        From the start of coding to release I make sure the integrity of the design is maintained across multiple platforms and browsers.
+      </p>
+    </div>
+  </div>
+</section>
+<section>
+  <h2>
+    Recent Work
+  </h2>
+  <div class="recent-work">
+    <div class="image-container">
+      <%= image_tag("frame_generic_light.png", alt:"Muzit item detail hero image", class:"responsive") %>
+    </div>
+      <div class="view-project">
+        <h2 class="company-name">Muzit</h2>
+        <%= link_to "View Project", "/work/muzit/index.html", class: "btn" %>
       </div>
     </div>
-  </section>
-  <section class="recent-work">
-  	<h2>
-  		Recent Work
-  	</h2>
-    <div class="container grid">
-      <figure>
-        <% link_to "../work/muzit/index.html", class:"" do %>
-        <div class="figure-overlay"></div>
-          <%= image_tag("work-panorama.png", alt:"Panorama", class:"responsive") %>
-        <% end %>
-        <figcaption class="site-details fade">
-          <h3 class="company">Muzit</h3>
-          <p class="site">Panorama</p>
-        </figcaption>
-      </figure>
-      <figure>
-        <% link_to "javascript:void(0);", class:"" do %>
-        <div class="figure-overlay"></div>
-          <%= image_tag("work-panorama.png", alt:"Panorama", class:"responsive") %>
-        <% end %>
-        <figcaption class="site-details fade">
-          <h3 class="company">FrontStream</h3>
-          <p class="site">Panorama</p>
-        </figcaption>
-      </figure>
-      <figure>
-        <% link_to "javascript:void(0);", class:"" do %>
-        <div class="figure-overlay"></div>
-          <%= image_tag("work-panorama.png", alt:"Panorama", class:"responsive") %>
-        <% end %>
-        <figcaption class="site-details fade">
-          <h3 class="company">FrontStream</h3>
-          <p class="site">Panorama</p>
-        </figcaption>
-      </figure>
-      <figure>
-        <% link_to "javascript:void(0);", class:"" do %>
-        <div class="figure-overlay"></div>
-          <%= image_tag("work-panorama.png", alt:"Panorama", class:"responsive") %>
-        <% end %>
-        <figcaption class="site-details fade">
-          <h3 class="company">FrontStream</h3>
-          <p class="site">Panorama</p>
-        </figcaption>
-      </figure>
-    </div>
-    <!-- // end container -->
-  </section>
-  <section id="contact" class="get-in-touch">
-    <h2>
-      Contact Me
-    </h2>
-    <div class="container grid">
-      <form name="frm" action="/cgi-bin/FormMail.index.pl" method="post" id="contactForm">
-        <fieldset>
-          <div class="field">
-            <label for="name">Name</label>
-            <input id="name" name="fullname" minlength="2" type="text" placeholder="Enter your full name" required>
-          </div>
-          <div class="field">
-            <label for="email">E-Mail (required)</label>
-            <input id="email" type="email" name="email" placeholder="name@domain.com" required>
-          </div>
-          <div class="field">
-            <label for="comment">Your comment (required)</label>
-            <textarea id="comment" name="comment" placeholder="Enter your full name" required></textarea>
-          </div>
-          <div class="field center">
-            <input class="btn-primary" type="submit" value="Send">
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </section>
-</main>
+  </div>
+  <!-- // end container -->
+</section>
