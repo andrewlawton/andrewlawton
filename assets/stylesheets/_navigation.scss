@@ -1,68 +1,16 @@
 nav {
-  background-color: #fff;
-  color: #333;
-  display: flex;
-  //font-family: 'Poppins', sans-serif;
-  padding: 1rem;
+  padding:  .75rem 0;
   position: fixed;
+  transition: all .5s ease-in-out;
   width: 100%;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  align-items: center;
-
+  z-index:  2;
 
   a {
-    color: #333;
-    font-family: Montserrat;
-    font-weight: 700;
+    color: #212121;
+    font-family:  "Poppins";
+    font-size: 1rem;
+    font-weight:  500;
     text-decoration: none;
-  }
-
-  .logo {
-    font-size: 1.25rem;
-    font-weight: 900;
-    white-space: nowrap;
-
-    &::before,
-    &::after {
-      border-style: solid;
-      border-width: 0.12em 0.12em 0 0;
-      content: '';
-      display: inline-block;
-      height: 0.45em;
-      left: 0.25em;
-      position: relative;
-      top: 0.6em;
-      transform: rotate(-135deg);
-      vertical-align: top;
-      width: 0.45em;
-    }
-
-    &::after {
-      left: -0.25em;
-      transform: rotate(45deg);
-    }
-
-    a {
-      display: inline-block;
-      letter-spacing: 0;
-
-      &:hover {
-        transform: rotateX(360deg);
-        transition: .5s;
-      }
-    }
-
-    span {
-      &:first-of-type {
-        color: #cd2026;
-      }
-
-      &:last-of-type {
-        // color: #333;
-      }
-    }
   }
 
   button {
