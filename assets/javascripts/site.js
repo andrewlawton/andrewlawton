@@ -16,6 +16,20 @@ menuIcon.addEventListener('click', function() {
     }
 });
 
+// nav scroll function
+
+var navbar = document.getElementById("nav");
+
+window.onscroll = function() {
+  "use strict";
+  if (document.body.scrollTop >= 70 || document.documentElement.scrollTop >= 70) {
+    navbar.classList.add("scroll");
+    //alert('scrolled');
+  } else {
+    navbar.classList.remove("scroll");
+  }
+};
+
 // HTML5 contact form validation
 
 let submitted = false
