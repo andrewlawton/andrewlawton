@@ -27,3 +27,10 @@
 .container > .full-bleed {
   grid-column: full-start / full-end;
 }
+
+@media (min-width: 48em) {
+  .col-2 {
+    display: inherit;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
