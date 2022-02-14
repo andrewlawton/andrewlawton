@@ -14,13 +14,17 @@ body {
   flex-direction: column;
   font: 16px/1.5 "Roboto Slab", sans-serif;
   min-height: 100vh;
-  -webkit-font-smoothing: antialiased;
+  // -webkit-font-smoothing: antialiased;
 }
 
 ul {
   padding: 0;
   list-style-position: inside;
   list-style-type: none;
+}
+
+figure {
+  margin: 0;
 }
 
 main {
