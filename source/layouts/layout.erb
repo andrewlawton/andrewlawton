@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300;400;800&family=Roboto&family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <%= favicon_tag 'images/favicon.ico' %>
     <%= stylesheet_link_tag "site" %>
   </head>
@@ -23,5 +24,10 @@
     </main>
     <%= partial "partials/footer" %>
     <%= javascript_include_tag "site" %>
+    <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.min.js" %>
+    <%= javascript_include_tag "https://unpkg.com/aos@2.3.1/dist/aos.js" %>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
