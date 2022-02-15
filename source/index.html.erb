@@ -9,7 +9,7 @@ bodyClass: home
     <h1><span>Hi there.</span> I'm Andrew,<br> a UI/UX Designer and Developer.</h1>
   </div>
   <h2 class="header-underline">Recent Work</h2>
-  <h3>Work Sans</h3>
+<!--   <h3>Work Sans</h3>
   <p class="work-sans">AL - <a href="#">Aromatic romatic spoon saucer, half and half, body foam affogato</a>
     americano cup carajillo strong. Aftertaste robust cup, aroma organic
     medium half and half macchiato. Seasonal body, a lungo carajillo french
@@ -26,36 +26,38 @@ bodyClass: home
       americano cup carajillo strong</a>. Aftertaste robust cup, aroma organic
     medium half and half macchiato. Seasonal body, a lungo carajillo french
     press aromatic robusta. Shop roast lungo wings, ristretto, bar grounds a
-    rich brewed.</p>
-  <div class="project full-bleed">
-    <% link_to "/work/muzit/index.html", class:"" do %>
+    rich brewed.</p> -->
+  <div id="work" class="full-bleed" data-aos="fade-up">
+    <div class="project">
+      <% link_to "/work/muzit/index.html", class:"" do %>
       <figure>
         <%= image_tag("muzit-home.jpg", alt:"Muzit item detail hero image") %>
       </figure>
-      <div class="container name">
+      <div class="container name aos-init aos-animate"  data-aos="fade-up">
         <h2>Muzit</h2>
       </div>
-    <% end %>
-  </div>
-  <div class="project full-bleed">
-    <% link_to "/work/fronstream/index.html", class:"" do %>
-    <figure>
+      <% end %>
+    </div>
+    <div class="project">
+      <% link_to "/work/fronstream/index.html", class:"" do %>
+      <figure>
         <%= image_tag("frontstream-home.jpg", alt:"Image of mans hand holding an iPhone", class:"responsive") %>
       </figure>
       <div class="container name">
         <h2>FrontStream</h2>
       </div>
-    <% end %>
-  </div>
-  <div class="project full-bleed">
-    <% link_to "/work/biddingforgood/index.html", class:"" do %>
+      <% end %>
+    </div>
+    <div class="project">
+      <% link_to "/work/biddingforgood/index.html", class:"" do %>
       <figure>
         <%= image_tag("biddingforgood-home.jpg", alt:"Image of Macbook screen") %>
       </figure>
       <div class="container name">
         <h2>BiddingForGood</h2>
       </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
   <div class="contact full-bleed">
     <h3>Drop me a line...</h3>
