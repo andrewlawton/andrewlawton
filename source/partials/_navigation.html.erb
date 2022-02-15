@@ -1,18 +1,29 @@
-<nav role="navigation">
-  <div class="logo">
-    <% link_to "/index.html", class:"" do %>
-      <span>andrew</span> <span>lawton</span>
-    <% end %>
-  </div>
-  <button class="menu-icon" aria-expanded="false" aria-controls="menu">
-    <span>Menu</span>
-  </button>
-  <div id="menu">
-    <ul class="menu-list">
-      <li><%= link_to "Home", "#" %></li>
-      <li><%= link_to "Work", "#" %></li>
-      <li><%= link_to "About", "#" %></li>
-      <li><%= link_to "Contact", "#" %></li>
-    </ul>
+<nav role="navigation" id="nav">
+  <div class="container">
+    <div class="col-2">
+      <% link_to "/index.html", class:"logo" do %>
+        <span>AL</span>
+      <% end %>
+      <button class="menu-icon" aria-expanded="false" aria-controls="menu">
+        <svg id="menu-svg" xmlns="http://www.w3.org/2000/svg"><svg  enable-background="new 0 0 122.879 103.609" height="28" width="28" viewBox="0 0 122.879 103.609"  xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m10.368 0h102.144c5.703 0 10.367 4.665 10.367 10.367s-4.664 10.368-10.367 10.368h-102.144c-5.702 0-10.368-4.665-10.368-10.367 0-5.703 4.666-10.368 10.368-10.368zm0 82.875h102.144c5.703 0 10.367 4.665 10.367 10.367s-4.664 10.367-10.367 10.367h-102.144c-5.702 0-10.368-4.665-10.368-10.367s4.666-10.367 10.368-10.367zm0-41.437h102.144c5.703 0 10.367 4.665 10.367 10.367s-4.664 10.368-10.367 10.368h-102.144c-5.702 0-10.368-4.666-10.368-10.368s4.666-10.367 10.368-10.367z" fill-rule="evenodd"/></svg></svg>
+        <span>Menu</span>
+      </button>
+      <div id="menu">
+        <ul class="menu-list">
+          <li>
+            <%= link_to "Home", "../index.html" %>
+          </li>
+          <li>
+            <%= link_to "Work", "#" %>
+          </li>
+          <li>
+            <%= link_to "About", "#" %>
+          </li>
+          <li>
+            <%= link_to "Contact", "../contact/index.html" %>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </nav>
