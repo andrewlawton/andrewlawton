@@ -24,9 +24,11 @@ window.onscroll = function() {
   "use strict";
   if (document.body.scrollTop >= 70 || document.documentElement.scrollTop >= 70) {
     navbar.classList.add("scroll");
-    //alert('scrolled');
+    document.getElementById("menu-svg").style.fill = "#fff";
+
   } else {
     navbar.classList.remove("scroll");
+    document.getElementById("menu-svg").style.fill = "#333";
   }
 };
 
