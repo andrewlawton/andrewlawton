@@ -1,66 +1,48 @@
 nav {
-  padding:  .75rem 0;
+  padding: .5rem 0;
   position: fixed;
   transition: all .5s ease-in-out;
   width: 100%;
-  z-index:  2;
-
-  a {
-    color: #212121;
-    font-family:  "Poppins";
-    font-size: 1rem;
-    font-weight:  500;
-    text-decoration: none;
-  }
+  z-index: 2;
 
   button {
-    position: absolute;
-    right: 1em;
-    top: 0.8em;
-    padding: 8px;
     border: none;
-    font-size: 1em;
     background: transparent;
-    color: #fff;
-    display: none;
+    position: absolute;
+    padding: 0;
+    right: 1.5em;
+    top: 0.75em;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
 
-    &.menu-icon {
-      background: url('/images/menu-icon.svg') no-repeat;
-      display: block;
-      fill: #333;
-      height: 26px;
-      width: 26px;
-      background-size: 100% 100%;
-      cursor: pointer;
-
-      span {
-        position: absolute;
-        clip: rect(1px, 1px, 1px, 1px);
-        padding: 0;
-        border: 0;
-        height: 1px;
-        width: 1px;
-        overflow: hidden;
-      }
+    span {
+      position: absolute;
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 0;
+      border: 0;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
     }
   }
 
   #menu {
     background: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    z-index: 1;
-    top: 48px;
+    height: 0%;
     left: 0;
     overflow-y: hidden;
+    position: fixed;
+    top: 52px;
     transition: 0.5s;
     width: 100%;
-    height: 0%;
+    z-index: 1;
 
     &.expanded {
       height: 100%;
     }
 
-    ul.menu-list {
+    .menu-list {
       padding: 0;
 
       li {
@@ -72,17 +54,28 @@ nav {
 
       a {
         color: #fff;
+        font-family: "Poppins";
         font-size: 1.75rem;
+        font-weight: 500;
+        text-decoration: none;
       }
+    }
+  }
+
+  &.scroll {
+    color: #212121;
+    background-color: rgba(3, 3, 3, 0.8);
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+
+    #menu .menu-list a {
+      color: #fff;
     }
   }
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   nav {
-    // display: flex;
-    // align-items: center;
 
     button.menu-icon {
       display: none;
@@ -91,29 +84,50 @@ nav {
     #menu {
       background: none;
       display: inline-flex;
+      align-items: center;
+      // reset mobile menu height from 0 to display menu
+      height: auto;
       justify-content: flex-end;
-      // margin: 0;
       position: static;
       transition: none;
 
-      ul.menu-list {
-        display: block;
+      .menu-list {
+        display: inherit;
+        font-weight: 500;
         margin: 0;
 
         li {
-          display: inline-flex;
           line-height: normal;
-          margin: 0 1em 0 0;
-          width: auto;
+          margin: 0 2em 0 0;
+          position: relative;
 
           &:last-child {
             margin: 0;
           }
 
           a {
-            color: inherit;
+            color: #212121;
             font-size: 1em;
-            text-decoration: none;
+
+            &:before {
+              content: "";
+              position: absolute;
+              left: 50%;
+              right: 50%;
+              bottom: -2px;
+              background: #cd2026;
+              height: 3px;
+              opacity: 0;
+              transition: all 0.2s ease-out;
+            }
+
+            &:hover {
+              &:before {
+                left: 0;
+                right: 0;
+                opacity: 1;
+              }
+            }
           }
         }
       }
