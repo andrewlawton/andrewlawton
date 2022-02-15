@@ -109,7 +109,7 @@ nav {
             color: #212121;
             font-size: 1em;
 
-            &:before {
+            &::before {
               content: "";
               position: absolute;
               left: 50%;
@@ -122,7 +122,7 @@ nav {
             }
 
             &:hover {
-              &:before {
+              &::before {
                 left: 0;
                 right: 0;
                 opacity: 1;
