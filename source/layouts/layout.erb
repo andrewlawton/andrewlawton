@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title><%= current_page.data.title || "Andrew Lawton" %></title>
+    <title>
+      <%= current_page.data.title || "Andrew Lawton" %>
+    </title>
     <meta name="author" content="Andrew Lawton">
     <meta name="Description" content="<%= current_page.data.metaDescription %>" />
     <meta name="Keywords" content="<%= current_page.data.metaKeywords %>" />
@@ -24,10 +26,16 @@
     </main>
     <%= partial "partials/footer" %>
     <%= javascript_include_tag "site" %>
-    <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.min.js" %>
     <%= javascript_include_tag "https://unpkg.com/aos@2.3.1/dist/aos.js" %>
     <script>
       AOS.init();
+    </script>
+    <script type="text/javascript">
+    window.onload = function() {
+      setTimeout(function() {
+        document.body.classList.add('loaded');
+      }, 1500);
+    };
     </script>
   </body>
 </html>
