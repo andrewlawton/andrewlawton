@@ -31,6 +31,11 @@ main {
   flex: 1 0 auto;
 }
 
+main ::selection {
+  background: #cd2026;
+  color: #fff;
+}
+
 section {
   padding: 1em;
 }
@@ -44,6 +49,28 @@ a.active {
   border-bottom: 2px solid var(--primary-color);;
 }
 
+a.btn {
+  width: auto;
+  background: #000;
+  border-bottom: none;
+  border-radius: 50px;
+  color:  #fff;
+  display: inline-block;
+  font-size:  .75em;
+  font-family: "Poppins";
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease 0s;
+
+  &:hover {
+    background: #cd2026;
+    color: #fff;
+  }
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -52,7 +79,7 @@ a.active {
   visibility: visible !important;
 }
 
-// UTILITIES
+// Utilities
 
 .center {
   text-align: center;
@@ -61,5 +88,3 @@ a.active {
 .hidden {
   display: none;
 }
-
-
