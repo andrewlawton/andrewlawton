@@ -32,42 +32,6 @@ window.onscroll = function() {
   }
 };
 
-//add smooth scrolling when clicking any anchor link
-
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-//         document.querySelector(this.getAttribute('href')).scrollIntoView({
-//             behavior: 'smooth'
-//         });
-//     });
-// });
-
-
-// https://webdesign.tutsplus.com/tutorials/smooth-scrolling-vanilla-javascript--cms-35165
-
-const links = document.querySelectorAll("a[href^="#"]");
-
-//const links = document.querySelectorAll("a[href^="index.html#"]");
-
-for (const link of links) {
-  link.addEventListener("click", clickHandler);
-}
-
-function clickHandler(e) {
-  e.preventDefault();
-  const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
-
-  scroll({
-    top: offsetTop,
-    behavior: "smooth"
-  });
-}
-
-
-
-
 // HTML5 contact form validation
 
 let submitted = false
