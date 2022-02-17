@@ -16,6 +16,16 @@ menuIcon.addEventListener('click', function() {
     }
 });
 
+// set nav active link
+
+// const menuItem = document.querySelectorAll('nav .menu-list a');
+
+// menuItem.forEach(link => {
+//   if (link.getAttribute('href') === (location.pathname)) {
+//     link.classList.add("active")
+//   }
+// })
+
 // nav scroll function
 
 var navbar = document.getElementById("nav");
