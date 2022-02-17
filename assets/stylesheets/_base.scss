@@ -58,15 +58,16 @@ section {
   padding: 1em;
 }
 
-a.active {
-  border-bottom: 2px solid var(--primary-color);;
-}
+// a.active {
+//   border-bottom: 2px solid var(--primary-color);;
+// }
 
 a.btn {
   width: auto;
   background: #000;
   border-bottom: none;
   border-radius: 50px;
+  box-shadow: none;
   color:  #fff;
   display: inline-block;
   font-size:  .75em;
