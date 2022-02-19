@@ -12,15 +12,9 @@ body {
   color: var(--body-color);
   display: flex;
   flex-direction: column;
-  font: 16px/1.5 "Roboto Slab", sans-serif;
+  font: 16px/1.5 "Work Sans", sans-serif;
   min-height: 100vh;
   // -webkit-font-smoothing: antialiased;
-}
-
-ul {
-  padding: 0;
-  list-style-position: inside;
-  list-style-type: none;
 }
 
 figure {
@@ -34,6 +28,7 @@ img.responsive {
 
 main {
   flex: 1 0 auto;
+  margin-top: 52px;
 }
 
 main a {
@@ -74,6 +69,45 @@ a.btn {
   &:hover {
     background: #cd2026;
     color: #fff;
+  }
+}
+
+.project {
+  overflow: hidden;
+  position:  relative;
+  a {
+    background: none;
+    border-bottom: none;
+    display:  block;
+    position: inherit;
+    &:hover {
+      background: inherit;
+      box-shadow: none;
+      transition: none;
+      color: transparent;
+    }
+  }
+  .name {
+    color: #fff;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-shadow: 1px 1px #111;
+    bottom: 10%;
+    width:  auto;
+    /* allow image to recieve hover event transition effect from absolute positioned element */
+    pointer-events: none;
+  }
+
+  img {
+    display: block;
+    max-height:  550px;
+    object-fit: cover;
+    width: 100%;
+    transition: all 0.8s ease;
+    &:hover {
+      transform:  scale(1.1);
+    }
   }
 }
 
