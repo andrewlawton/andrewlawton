@@ -1,53 +1,65 @@
 // fonts
 
-@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@700&family=Open+Sans&family=Poppins:wght@300&family=Roboto+Slab:wght@300&family=Source+Sans+Pro&display=swap');
+
+h1, h2 ,h3 ,h4 {
+  font-family: "Poppins";
+}
 
 h1 {
-  font-family: Montserrat;
-  text-align: center;
+  font-family: "Poppins";
+/*  --fluid-type-min: 2.25rem;
+  --fluid-type-max: 3.25rem;
+  --fluid-type-target: 5vw;*/
+
+  font-size: clamp(2.75rem, 5vw, 4rem);
 }
 
 h2 {
-  color: var(--primary-color);;
-  font-family: Montserrat;
-  font-weight: normal;
-  margin-top: 3em;
-  text-align: center;
+  font-family: "Poppins";
+/*  --fluid-type-min: 1.75rem;
+  --fluid-type-max: 2.5rem;*/
+
+  font-size: clamp(2.25rem, 4vw, 3.25rem);
+
 }
 
 h3 {
-  //color: #333333;
-  font-family: Montserrat;
-  font-size: 1em;
-  //letter-spacing: -1px;
-  margin: 0 0 .5em 0;
-  //text-align: center;
+  font-family: "Poppins";
+/*  --fluid-type-min: 1.5rem;
+  --fluid-type-max: 2.0rem;*/
+
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+}
+
+h4 {
+  font-family:  "Poppins";
+}
+
+
+.header-underline {
+  display: inline-block;
+  padding-bottom: 1px;
+  position: relative;
+  text-align:  center;
+}
+
+.header-underline::before {
+  border-bottom: 4px solid #cd2026;
+  bottom: -4px;
+  content: "";
+  left: calc(50% - 7%);
+  position: absolute;
+  width: 14%;
+}
+
+p.work-sans {
+  font-family: "Work Sans";
 }
 
 p.roboto {
-  font-family: "Roboto Slab";
-  font-size: 1.25em;
-  margin: 0 0 1em 0;
-  font-weight: 700;
+  font-family: "Roboto";
 }
 
-p.cardo {
-  font-family: "Cardo";
-  font-size: 1.25em;
-  margin: 0 0 1em 0;
-  font-weight: 700;
-}
-
-p.source-sans {
-  font-family: "Source Sans Pro";
-  font-size: 1.25em;
-  margin: 0 0 1em 0;
-  font-weight: 400;
-}
-
-.skills p {
-  //font-family: "Roboto Slab";
-  font-family: "Source Sans Pro";
-  font-weight: 400;
-
+p.lato {
+  font-family: "Lato";
 }
