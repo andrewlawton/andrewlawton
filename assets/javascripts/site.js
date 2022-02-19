@@ -32,7 +32,7 @@ var navbar = document.getElementById("nav");
 
 window.onscroll = function() {
   "use strict";
-  if (document.body.scrollTop >= 70 || document.documentElement.scrollTop >= 70) {
+  if (document.body.scrollTop >= 12 || document.documentElement.scrollTop >= 12) {
     navbar.classList.add("scroll");
     document.getElementById("menu-svg").style.fill = "#fff";
 
