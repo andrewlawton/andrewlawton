@@ -1,29 +1,122 @@
 // work
 
-.work main {
-  margin-top: 4em;
+.work .hero img {
+  display: block;
+  object-fit: cover;
 }
 
-.work header {
-  display: block;
+.work .project-details {
+    background: #f4f4f4;
+    padding: 1.5em 0;
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+.work .project-details .col-3 {
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-column-gap: 3em;
 }
+
+
+.work ol {
+  list-style: none;
+  padding: 0;
+  counter-reset: steps;
+}
+.work ol li {
+  counter-increment: steps;
+  margin-bottom: .5em;
+}
+
+.work ol li::before {
+  content: counter(steps);
+  margin-right: 0.5rem;
+  background: #ff6f00;
+  color: white;
+  width: 1.45em;
+  height: 1.45em;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  line-height: 1.2em;
+}
+
+.work .box-shadow {
+
+  box-shadow: 1px 3px 3px -1px rgba(33,33,33,0.25);
+
+}
+
+
+
+
+
+
+.bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    position: relative;
+    //opacity: 0.85;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: #111;
+
+    height : 100vh;
+  }
+
+  .bgimg-1 {
+    background-image: url("/images/muzit-home.jpg");
+    height: 380px;
+    //width: 100%;
+
+
+  }
+
+  .bgimg-2 {
+    //background-image: url("parallax-muzit-hero.jpg");
+    min-height: 400px;
+  }
+
+  .bgimg-3 {
+    //background-image: url("img_parallax3.jpg");
+    min-height: 400px;
+  }
+
+
+
+
+// original code
+
+// .work main {
+//   margin-top: 4em;
+// }
+
+// .work header {
+//   display: block;
+// }
 
 .work .intro {
   font-size: 2em;
 }
 
-.work p {
-  line-height: 1.75;
-}
+// .work p {
+//   line-height: 1.75;
+// }
 
-.work figure {
-  max-width: 980px;
-}
+// .work figure {
+//   max-width: 980px;
+// }
 
-.project-details {
-  background: #f1f1f1;
-  padding: 1.5em;
-}
 
 @media(min-width: 768px) {
 
@@ -48,12 +141,12 @@
   //   justify-items: center;
   // }
 
-  .work .grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr 1fr;
-    grid-row-gap: 2em;
-  }
+  // .work .grid {
+  //   display: grid;
+  //   grid-template-columns: repeat(1, 1fr);
+  //   grid-template-rows: 1fr 1fr;
+  //   grid-row-gap: 2em;
+  // }
 
   .work .media {
     display: grid;
@@ -75,45 +168,21 @@
     font-size: 1.15em;
   }
 
-  .work header {
-    //margin-top: 70px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
+  // .work header {
+  //   //margin-top: 70px;
+  //   display: grid;
+  //   grid-template-columns: 1fr;
+  //   grid-template-rows: 1fr;
+  // }
 
-  .work header .hero {
-    height: auto;
-    object-fit: cover;
-    width: 640px;
-    margin: 0 auto;
-  }
-
-  .work h2.intro {
-    margin: 0 0 2em 0;
-    padding: 0 2em;
-  }
+  // .work h2.intro {
+  //   margin: 0 0 2em 0;
+  //   padding: 0 2em;
+  // }
 
   .work .media.reverse {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "content img";
   }
-
-  .get-in-touch .grid {
-    grid-template-columns: repeat(12, 1fr);
-  }
-
-  .get-in-touch .grid form {
-    grid-column: 4 / span 6;
-  }
-
-  .project-details {
-    background: #f1f1f1;
-    display: grid;
-    grid-column-gap: 2em;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 1.5em;
-  }
-
 }
 
