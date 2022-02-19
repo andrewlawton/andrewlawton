@@ -2,7 +2,7 @@
 
 .container {
   display: grid;
-  /*set middle column to 768px 48rem x 16 (base font-size) */
+  /*set main column to 768px 48rem x 16 (base font-size) */
   grid-template-columns:
     [full-start] minmax(1.5em, 1fr)
     [main-start] minmax(0, 48em) [main-end]
@@ -11,8 +11,7 @@
 
 @media (min-width: 62em) {
   .container {
-    /*set middle column to 992px 62rem x 16 (base font-size) */
-    border:  1px solid #f00;
+    /*set main column to 992px 62rem x 16 (base font-size) */
     grid-template-columns:
       [full-start] minmax(1.5em, 1fr)
       [main-start] minmax(0, 62em) [main-end]
@@ -32,5 +31,11 @@
   .col-2 {
     display: inherit;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col-3 {
+    display: grid;
+    grid-column-gap: 2em;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
