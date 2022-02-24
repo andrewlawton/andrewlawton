@@ -3,11 +3,36 @@
 .home {
   .hero {
     h1 {
-      margin: 4rem 0 2rem 0;
+      margin: 4rem 0 0.5rem 0;
       max-width: 20ch;
     }
     span {
       color:  #cd2026;
+    }
+
+    h2 {
+      color: #484848;
+      font-weight: normal;
+      line-height: 1.2;
+      margin-top: 0;
+    }
+
+    @keyframes wave {
+      0% { transform: rotate(0.0deg) }
+      10% { transform: rotate(16.0deg) }
+      20% { transform: rotate(-6.0deg) }
+      30% { transform: rotate(16.0deg) }
+      40% { transform: rotate(-4.0deg) }
+      50% { transform: rotate(16.0deg) }
+      60% { transform: rotate(0.0deg) }
+      100% { transform: rotate(0.0deg) }
+    }
+
+    .waving-hand {
+      animation: wave 2.1s 0.6s;
+      transform-origin: 75% 75%;
+      animation-iteration-count: 2;
+      display: inline-block;
     }
   }
 }
