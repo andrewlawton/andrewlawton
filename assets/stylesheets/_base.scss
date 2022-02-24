@@ -32,15 +32,16 @@ main {
 }
 
 main a {
-  border-bottom: 1px solid #cd2026;
-  box-shadow: inset 0 -1px #cd2026;
+  background-image: linear-gradient(to bottom, #fff 50%, #cd2026 50%);
+  background-size: 100% 200%;
+  border-bottom: 2px solid #cd2026;
   color: #212121;
   text-decoration: none;
-  transition: background .15s cubic-bezier(.33,.66,.66,1)0s;
+  transition: background-position .2s ease-in-out, color .2s ease-in-out;
+
   &:hover {
+    background-position: 0 100%;
     color: #fff;
-    background: #cd2026;
-    text-decoration: inherit;
   }
 }
 
