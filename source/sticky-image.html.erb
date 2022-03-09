@@ -4,10 +4,7 @@ metaDescription:
 metaKeywords:
 bodyClass: sticky
 ---
-
 <!-- Swap sticky image on scroll https://codepen.io/redone75/pen/ExgwPdE -->
-
-
 <style>
 /*.threshold {
   position: sticky;
@@ -116,73 +113,68 @@ h3 {
   padding: 10px 20px;
   z-index: 900;
 }*/
-
 </style>
-
 <main role="main" id="content">
-  <div class="text">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-<div class="locker">
-  <div class="locker__image">
-    <div class="locker__container">
-      <!-- <img class="image image--1" src="https://assets.codepen.io/325536/placeimg_480_720_tech.jpg"> -->
-<img class="sticky-image image--1" src="https://via.placeholder.com/400x500.png">
-<img class="sticky-image image--2" src="https://via.placeholder.com/500x300.png">
-<img class="sticky-image image--3" src="https://via.placeholder.com/500x300.png">
-<img class="sticky-image image--4" src="https://via.placeholder.com/500x300.png">
-
-      <!-- <img class="image image--2" src="https://assets.codepen.io/325536/tech.jpeg" height="200" width="600"> -->
-      <!-- <img class="image image--3" src="https://assets.codepen.io/325536/tech-2.jpeg"> -->
-      <!-- <img class="image image--4" src="https://assets.codepen.io/325536/tech-3.jpeg"> -->
+  <div class="container">
+    <div class="text">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="locker">
+      <div class="locker__image">
+        <div class="locker__container">
+          <img class="sticky-image image--1 responsive" src="https://via.placeholder.com/400x500.png">
+          <img class="sticky-image image--2 responsive" src="https://via.placeholder.com/500x300.png">
+          <img class="sticky-image image--3 responsive" src="https://via.placeholder.com/400x500.png">
+          <img class="sticky-image image--4 responsive" src="https://via.placeholder.com/500x300.png">
+        </div>
+      </div>
+      <div class="locker__content">
+        <div class="locker__section locker__section--1 cb" data-swap="image--1">
+          <h3>01</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="locker__section locker__section--2 cb" data-swap="image--2">
+          <h3>02</h3>
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="locker__section locker__section--3 cb" data-swap="image--3">
+          <h3>03</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="locker__section locker__section--4 cb" data-swap="image--4">
+          <h3>04</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="threshold threshold--top"></div>
+    </div>
+    <div class="text">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </div>
-  <div class="locker__content">
-    <div class="locker__section locker__section--1 cb" data-swap="image--1">
-      <h3>01</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div class="locker__section locker__section--2 cb" data-swap="image--2">
-      <h3>02</h3>
-      <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div class="locker__section locker__section--3 cb" data-swap="image--3">
-      <h3>03</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div class="locker__section locker__section--4 cb" data-swap="image--4">
-      <h3>04</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-  </div>
-  <div class="threshold threshold--top"></div>
-</div>
-<div class="text">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
 </main>
-
 <script>
 
-if(typeof window.IntersectionObserver !== 'undefined') {
-  let options = {
-    threshold: [0.5, 1]
+  if (typeof window.IntersectionObserver !== 'undefined') {
+    let options = {
+      threshold: [0.5, 1]
+    }
+    const targets = document.querySelectorAll('.cb');
+    const locker = document.querySelector('.locker__container');
+
+    function handleIntersection(entries) {
+      entries.map((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.current = entry.target.dataset.swap;
+          document.querySelector(".locker__container ." + entry.target.current).classList.add("active");
+        } else {
+          document.querySelector(".locker__container ." + entry.target.current).classList.remove("active");
+        }
+      });
+    }
+    const observer = new IntersectionObserver(handleIntersection, options);
+    targets.forEach(target => observer.observe(target));
+  } else {
+    // Fallback
   }
-  const targets = document.querySelectorAll('.cb');
-  const locker = document.querySelector('.locker__container');
-  function handleIntersection(entries) {
-    entries.map((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.current = entry.target.dataset.swap;
-        document.querySelector(".locker__container ." + entry.target.current).classList.add("active");
-      } else {
-        document.querySelector(".locker__container ." + entry.target.current).classList.remove("active");
-      }
-    });
-  }
-  const observer = new IntersectionObserver(handleIntersection, options);
-  targets.forEach(target => observer.observe(target));
-} else {
-  // Fallback
-}
 </script>
