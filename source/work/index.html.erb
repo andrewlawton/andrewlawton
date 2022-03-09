@@ -6,9 +6,6 @@ bodyClass: work
 ---
 
 <div class="container">
-  <div class="hero">
-    <h1><span>Hi there.</span> I'm Andrew,<br> a UI/UX Designer and Developer.</h1>
-  </div>
   <h2 class="header-underline">Work</h2>
   <h3>Work Sans</h3>
   <p class="work-sans">AL - <a href="#">Aromatic romatic spoon saucer, half and half, body foam affogato</a>
@@ -31,12 +28,12 @@ bodyClass: work
   <div id="work" class="full-bleed">
     <div class="project">
       <% link_to "/work/muzit/index.html", class:"" do %>
-      <figure>
-        <%= image_tag("muzit-home.jpg", alt:"Muzit item detail hero image") %>
-      </figure>
-      <div class="container name aos-init aos-animate" data-aos="fade-up">
-        <h2>Muzit</h2>
-      </div>
+        <figure>
+          <%= image_tag("muzit-home.jpg", alt: "Muzit item detail hero image", class: "responsive") %>
+        </figure>
+        <div class="container name aos-init aos-animate" data-aos="fade-up">
+          <h2>Muzit</h2>
+        </div>
       <% end %>
     </div>
     <div class="project">
