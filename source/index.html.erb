@@ -4,6 +4,7 @@ metaDescription: Andrew Lawton Front-End Web Design and Development
 metaKeywords: Andrew Lawton, Andrew, Lawton, Web Design, Web Development, user interface design, HTML, HTML5, CSS, CSS3, front-end, GUI, graphical user interface, interface engineer, Interface Design
 bodyClass: home
 ---
+
 <div id="loader-container">
   <div id="loader">
     <span>AL</span>
@@ -13,59 +14,22 @@ bodyClass: home
 </div>
 
 <div class="container">
-  <div class="hero">
-    <h1><span>Hi there.</span> I'm Andrew,<br> a UI/UX Designer and Developer.</h1>
+  <div class="hero" data-aos="zoom-in" data-aos-delay="2500" data-aos-offset="200">
+    <h1>Hi <span class="waving-hand">&#128075;</span> I'm <span>Andrew</span>.</h1>
+    <h2>I’m a user interface and interaction designer.
   </div>
   <h2 class="header-underline">Recent Work</h2>
-<!--   <h3>Work Sans</h3>
-  <p class="work-sans">AL - <a href="#">Aromatic romatic spoon saucer, half and half, body foam affogato</a>
-    americano cup carajillo strong. Aftertaste robust cup, aroma organic
-    medium half and half macchiato. Seasonal body, a lungo carajillo french
-    press aromatic robusta. Shop roast lungo wings, ristretto, bar grounds a
-    rich brewed.</p>
-  <h3>Lato</h3>
-  <p class="lato">AL - <a href="#">Aromatic spoon saucer, half and half, body foam affogato
-      americano cup carajillo strong</a>. Aftertaste robust cup, aroma organic
-    medium half and half macchiato. Seasonal body, a lungo carajillo french
-    press aromatic robusta. Shop roast lungo wings, ristretto, bar grounds a
-    rich brewed.</p>
-  <h3>Roboto</h3>
-  <p class="roboto">AL - <a href="#">Aromatic spoon saucer, half and half, body foam affogato
-      americano cup carajillo strong</a>. Aftertaste robust cup, aroma organic
-    medium half and half macchiato. Seasonal body, a lungo carajillo french
-    press aromatic robusta. Shop roast lungo wings, ristretto, bar grounds a
-    rich brewed.</p> -->
   <section class="full-bleed">
     <div class="project">
       <% link_to "/work/muzit/index.html", class:"" do %>
       <figure>
         <%= image_tag("muzit-home.jpg", alt:"Muzit item detail hero image") %>
       </figure>
-      <div class="container name aos-init aos-animate" data-aos="fade-up">
+      <div class="container name" data-aos="fade-up">
         <h2>Muzit</h2>
       </div>
       <% end %>
     </section>
-<!--     <div class="project">
-      <% link_to "/work/fronstream/index.html", class:"" do %>
-      <figure>
-        <%= image_tag("frontstream-home.jpg", alt:"Image of mans hand holding an iPhone", class:"responsive") %>
-      </figure>
-      <div class="container name">
-        <h2>FrontStream</h2>
-      </div>
-      <% end %>
-    </div> -->
-<!--     <div class="project">
-      <% link_to "/work/biddingforgood/index.html", class:"" do %>
-      <figure>
-        <%= image_tag("biddingforgood-home.jpg", alt:"Image of Macbook screen") %>
-      </figure>
-      <div class="container name">
-        <h2>BiddingForGood</h2>
-      </div>
-      <% end %>
-    </div> -->
   </div>
   <%= partial "partials/contact" %>
 </div>
