@@ -58,8 +58,8 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  activate :relative_assets
   config[:relative_links] = true
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
@@ -67,7 +67,7 @@ end
 
 activate :external_pipeline,
    name: :webpack,
-   command: build? ? 'npm run build' : 'npm run start',
+   command: build? ? 'yarn run build' : 'yarn run start',
    source: '.tmp/dist',
    latency: 1
 
