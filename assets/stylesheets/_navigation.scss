@@ -33,7 +33,7 @@ nav {
     left: 0;
     overflow-y: hidden;
     position: fixed;
-    top: 52px;
+    top: 50px;
     transition: 0.5s;
     width: 100%;
     z-index: 1;
@@ -52,6 +52,7 @@ nav {
         text-align: center;
         width: 100%;
         line-height: 2.5;
+        display: block;
       }
 
       a {
@@ -88,7 +89,7 @@ nav {
       display: inline-flex;
       align-items: center;
       // reset mobile menu height from 0 to display menu
-      height: auto;
+      height: auto !important;
       justify-content: flex-end;
       position: static;
       transition: none;
