@@ -29,40 +29,29 @@ img.responsive {
 main {
   flex: 1 0 auto;
   margin-top: 50px;
-}
 
-main a {
-  // background-image: linear-gradient(to bottom, #fff 50%, #cd2026 50%);
-  // background-size: 100% 200%;
-  // border-bottom: 2px solid #cd2026;
-   color: #cd2026;
-  // text-decoration: none;
-  // transition: background-position .2s ease-in-out, color .2s ease-in-out;
-
+  a {
     box-shadow: 0px 0px 0px #cd2026;
-
+    color: #cd2026;
     text-decoration-line: none;
     text-decoration-style: initial;
     text-decoration-color: initial;
     text-decoration: none;
-
     font-weight: 600;
-  &:hover {
-    //background-position: 0 100%;
-    //color: #fff;
 
-    box-shadow: 0px 2px 0px #cd2026;
-
-    transition-duration: 200ms;
-    transition-timing-function: initial;
-    transition-delay: initial;
-    transition-property: box-shadow;
+    &:hover {
+      box-shadow: 0px 2px 0px #cd2026;
+      transition-duration: 200ms;
+      transition-timing-function: initial;
+      transition-delay: initial;
+      transition-property: box-shadow;
+    }
   }
-}
 
-main ::selection {
-  background: #cd2026;
-  color: #fff;
+  ::selection {
+    background: #cd2026;
+    color: #fff;
+  }
 }
 
 a.btn {
