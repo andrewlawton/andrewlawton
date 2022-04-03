@@ -2,39 +2,24 @@
 
 
 h1, h2 ,h3 ,h4 {
-  font-family: "Poppins";
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
 }
 
 h1 {
-  font-family: "Poppins";
-/*  --fluid-type-min: 2.25rem;
-  --fluid-type-max: 3.25rem;
-  --fluid-type-target: 5vw;*/
-
   font-size: clamp(2.75rem, 5vw, 4rem);
 }
 
 h2 {
-  font-family: "Poppins";
-/*  --fluid-type-min: 1.75rem;
-  --fluid-type-max: 2.5rem;*/
-
   font-size: clamp(2.25rem, 4vw, 3.25rem);
-
 }
 
 h3 {
-  font-family: "Poppins";
-/*  --fluid-type-min: 1.5rem;
-  --fluid-type-max: 2.0rem;*/
-
   font-size: clamp(1.75rem, 3vw, 2.25rem);
 }
 
 h4 {
-  font-family:  "Poppins";
+  font-size: 1.5rem;
 }
-
 
 .header-underline {
   display: inline-block;
@@ -47,9 +32,14 @@ h4 {
   border-bottom: 4px solid #cd2026;
   bottom: -4px;
   content: "";
-  left: calc(50% - 7%);
   position: absolute;
-  width: 14%;
+  left: calc(50% - 10%);
+  width: 20%;
+
+  @media (min-width: 36rem) {
+    left: calc(70% - 25%);
+    width: 10%;
+  }
 }
 
 p.work-sans {
