@@ -1,80 +1,84 @@
-// logo
+// ==============================
+// Logo
+// ==============================
 
 .logo {
-    align-items: center;
-    background-color: #fff;
-    border: 3px solid #000;
-    font-family: "Poppins";
-    display: flex;
-    height: 36px;
-    justify-content: center;
-    position: relative;
-    text-decoration: none;
-    width: 36px;
-  }
+  align-items: center;
+  background-color: #fff;
+  border: 3px solid #000;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  width: 34px;
 
-  .logo::before,
-  .logo::after {
+  &::before,
+  &::after {
     content: '';
     height: 7px;
     width: 7px;
     position: absolute;
     background-color: #fff;
-    top: 13px;
+    top: 11px;
     border-top: 3px solid #000;
     border-left: 3px solid #000;
   }
 
-  .logo::before {
+  &::before {
    left: -6px;
    transform: rotate(-45deg);
   }
 
-  .logo::after {
+  &::after {
     right: -6px;
     transform: rotate(135deg);
   }
 
-  .logo span {
-    font-size: 20px;
+  span {
+    font-size: 1em;
     font-weight: 900;
     color:  #000;
     display:  block;
   }
+}
 
-  .scroll .logo {
+.scroll {
+  .logo {
     background-color: #000;
     border: 3px solid #fff;
+
+    &::before,
+    &::after {
+      background-color: transparent;
+      border-top: 3px solid #fff;
+      border-left: 3px solid #fff;
+    }
+
+    span {
+      color:  #fff;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        height: 0;
+        width: 10px;
+        border-bottom: 5px solid transparent;  /* left arrow slant */
+        border-top: 5px solid transparent; /* right arrow slant */
+      }
+
+      &::before {
+        left: -8px;
+        border-right: 5px solid #000;
+      }
+
+      &::after {
+        right: -8px;
+        border-left: 5px solid #000;
+      }
+    }
   }
-
-  .scroll .logo::before,
-  .scroll .logo::after {
-    background-color: transparent;
-    border-top: 3px solid #fff;
-    border-left: 3px solid #fff;
-  }
-
-.scroll .logo span::before,
-.scroll .logo span::after {
-  content: '';
-  position: absolute;
-  top: 11px;
-  height: 0;
-  width: 10px;
-  border-bottom: 5px solid transparent;  /* left arrow slant */
-  border-top: 5px solid transparent; /* right arrow slant */
-}
-
-.scroll .logo span::after {
-  right: -8px;
-  border-left: 5px solid #000;
-}
-
-.scroll .logo span::before {
-  left: -8px;
-  border-right: 5px solid #000;
-}
-
-.scroll .logo span {
-  color:  #fff;
 }
