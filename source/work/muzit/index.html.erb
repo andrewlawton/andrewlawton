@@ -1,102 +1,318 @@
 ---
-title: Andrew Lawton - Work Muzit
+title: Work  &#58; Muzit | Andrew Lawton
 metaDescription:
 metaKeywords:
 bodyClass: work
 ---
 <div class="container">
-
-
   <header class="hero full-bleed">
-    <figure style="border: 1px solid #f00;">
-      <%= image_tag("muzit-trace-artist-details-hero.jpg", alt:"", class: "responsive") %>
+    <figure>
+      <%= image_tag("muzit/muzit-hero.jpg", alt: "Screenshot of the Muzit title details page displayed on the desktop", class: "responsive") %>
     </figure>
   </header>
-  <h1 class="header-underline">
-    Muzit
-  </h1>
+  <!--   <p> <h4>Analysis Focus:</h4> <ul class="criteria"> <li>Navigation &amp; Information architecture</li> <li>Search</li> <li>Visual Design</li> <li>Page Layout &amp; Visualization</li> <li>Page structure?</li> </ul> <p> <h4>Visual design principles.</h4> <ol> <li>Unity – use this to establish harmony between page elements, so they appear to belong together and users aren’t distracted by chaotic (e.g., misaligned) layouts.</li> <li>Gestalt– use these principles of how people perceive objects to guide how users interpret your design.</li> <li>Hierarchy – use placement, font, etc. to show importance.</li> <li>Balance – use this to distribute elements evenly.</li> <li>Contrast – use differences in color, etc. to accentuate elements.</li> <li>Scale – use this to emphasize elements to establish importance or depth.</li> <li>Dominance – use an object’s size, color, etc. to make it stand out.</li> </ol> </p> <h4>How analysis is applied/justified based on priciples:</h4> <ul> <li>Navigation &amp; Information architecture <ul> <li>Navbar - Issue(s): unity/alignment (icons/text), proximity (admin navs)</li> </ul> </li> <li>Search <ul> <li>Navbar search - Issue(s): search input width doesn't accomodate artists with long names, results menu existing indication unity/alignment</li> </ul> </li> <li> Visual Design <ul> <li>Dashboard - Issue(s): the options dropdown adds visual cluter and detracts from the artisit image and affects Task Orientation as it forces the user to go back from the artist details page to the dashboard each time to perform an action related to the artist (update torrent list, edit artist information or access and permissions.</li> <li>Artist Details - Issue(s): 1) Hero image icons and text impact the visual designs hierarchy principle of alignment. 2) The worldwide stats there’s no clear difference between date range tags and view filters. 3) </li> </ul> </li> <li>Global Layout &amp; Visualization <ul> <li> Artist Details - Issue(s): The </li> <li> Dashboard - Issue(s): </li> </ul> </li> </ul> -->
+  <h1 class="header-underline"> Muzit </h1>
   <section class="full-bleed project-details">
     <div class="container">
-    <div class="col-3">
-      <div>
-        <h3>Overview</h3>
-        <p>
-          Muzit is a data analytics company that monitors the global peer-to-peer (P2P) file sharing network of over 372 million households who have downloaded over 28 billion movies, music, video games, TV shows, software applications and other digital media. Muzit's platform enables client's to analyze category specifc torrent traffic, downloads and meta data to build targeted IP lists for direct advertising and marketing campaigns.
-        </p>
-      </div>
-      <div>
-        <h3>Design</h3>
-        <ul>
-          <li>Wireframe</li>
-          <li>Rapid Prototyping</li>
-          <li>Interaction</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Tools</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>SASS</li>
-          <li>Bootstrap</li>
-          <li>JQuery</li>
-          <li>Ruby on Rails</li>
-        </ul>
+      <div class="col-3">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            Muzit is a data analytics startup that monitors the global peer-to-peer (P2P) file sharing network of over 372 million households who have downloaded over 28 billion movies, music, video games, TV shows, software applications and other digital media. Muzit's platform enables client's to analyze category specifc torrent traffic, downloads and meta data to build targeted IP lists for direct advertising and marketing campaigns.
+          </p>
+        </div>
+        <div>
+          <h3>Role</h3>
+          <ul>
+            <li>Design</li>
+            <li>Rapid Prototyping</li>
+            <li>Interaction Design</li>
+            <li>QA Testing</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SASS</li>
+            <li>Bootstrap</li>
+            <li>JQuery</li>
+            <li>Jira</li>
+            <li>GitHub</li>
+            <li>Middleman</li>
+            <li>Ruby on Rails</li>
+            <li>AWS Elastic transcoder</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
   </section>
-
-  <h2 class="header-underline">
-      Challenge
-  </h2>
-
+  <h2 class="header-underline">Challenge</h2>
   <p>
-    I was contracted to redesign the first version of the Muzit platform. This process started with reviewing and analyzing the current site design to identify the major issues impacting the user experience, overall user interface design and functionality. Based on the anaylisis make recommendations to the team of the critical aspects of the design that need to be improved in the course of the redesign.
+    I was contacted by a former coworker looking for help with redesigning and improving the usability of the first version of their platform. The project began with evaluating the current site design to identify the issues impacting the user experience, overall user interface design and functionality. Based on my assessement make recommendations to the management team of the critical aspects of the designs that need to be made.
+  </p>
+  <p>
+    Audience: Record labels, Entertainment companies, Companies that manage music festivals and tours, Small companies that want targeted advertising for their sales and marketing.
+  </p>
+  <h2 class="header-underline"> Evaluation </h2>
+  <p>
+    My evaluation was focused on the following criteria. My recommendations also account for the mobile experience adaptation in the final design.
+  </p>
+  <ul class="criteria">
+    <li>Navigation &amp; Information architecture</li>
+    <li>Search</li>
+    <li>Visual Design</li>
+    <li>Page Layout &amp; Visualization</li>
+  </ul>
+  <h3> Navigation </h3>
+  <div class="evaluation">
+    <figure>
+      <%= image_tag("muzit/trace-v1-navigation.png", alt: "Screenshot of Muzit version 1 navigation design", class: "responsive", height: "515", width: "1280") %>
+    </figure>
+  </div>
+  <div class="summary full-bleed">
+    <div class="container">
+      <h4>Assessment</h4>
+      <ol>
+        <li>
+          The Muzit admin related navigation is accessible from two areas of the navigation bar. One to manage accounts, campaigns, add a new artist and approve torrents. The other to update the user profile and log out. Not to say sidebars are bad but in this case impacts the visual hierarchy principle of proximity between the admin sidebar and the admin dropdown.
+        </li>
+        <li>
+          Clicking the logo or &quot;TRACES&quot; directs the user to the same page which is redundant and not a standard navigation design convention.
+        </li>
+        <li>
+          The icons and labels are misaligned.
+        </li>
+      </ol>
+    </div>
+  </div>
+  <h3> Search </h3>
+  <div class="evaluation">
+    <figure>
+      <%= image_tag("muzit/trace-v1-search.png", alt: "Screenshot of Muzit version 1 search results design", class: "responsive", height: "344", width: "1280") %>
+    </figure>
+  </div>
+  <div class="summary full-bleed">
+    <div class="container">
+      <h4>Assessment</h4>
+      <ol>
+        <li>
+          The icon is misaligned in relation to the search input field and background color makes it appear disabled.
+        </li>
+        <li>
+          The search results dropdown width causes the &quot;Exisiting&quot; label to wrap if artist has a long name.
+        </li>
+      </ol>
+    </div>
+  </div>
+  <h3> Visual Design </h3>
+  <div class="evaluation">
+    <h4 class="text-center">Dashboard</h4>
+    <figure>
+      <%= image_tag("muzit/trace-v1-dashboard.png", alt: "Screenshot of Muzit version 1 dashboard page design", class: "responsive", height: "681", width: "1250") %>
+    </figure>
+  </div>
+  <div class="summary full-bleed">
+    <div class="container">
+      <h4>Assessment</h4>
+      <ol>
+        <li> The Artist Traces header and filter input do not expand to the full width of the viewport. </li>
+        <li> The options button is misaligned and visually separated from the aritist image. The background color makes it appear disabled. The button is repeated for each artist on the dashboard which are in the hundreds adding visual clutter and contributing to cognitive overload. </li>
+        <li> The artist options dropdown list items directs the user to the artist details page (see below). This requires the user to use the browser back button each time they need to perform a specifc action within the dropdown. </li>
+        <li> When an artist image in not available the image appears broken. </li>
+      </ol>
+    </div>
+  </div>
+  <div class="evaluation">
+    <h4 class="text-center"> Artist Details </h4>
+    <figure>
+      <%= image_tag("muzit/trace-v1-artist-details.png", alt: "Screenshot of Muzit version 1 artist details page design", class: "responsive", height: "1134", width: "1201") %>
+    </figure>
+  </div>
+  <div class="summary full-bleed">
+    <div class="container">
+      <h4>Assessment</h4>
+      <ol>
+        <li>
+          Clicking &quot;Follow&quot; toggles the button state to &quot;Following&quot; as plain text. This is an affordance issue. The &quot;Following&quot; state should appear clickable to the user. </li>
+        <li>
+          The header statistics Total Downloaded Songs, Potential Reach and Torrents are misaligned in relation to the icons. The text size is inconsistent causing hierarchy and legibility issues.
+        </li>
+        <li>
+          The date range filter dropdown is applied to each metric. Being able to change the date range for each individual metric would improve the user interaction.
+        </li>
+        <li>
+          The Traffic Origins map visualization allows both macro views and granular views, down to a given state/province. Being able to click the Top Countries list text to drill down to a given state/province would improve the interactivity.
+        </li>
+      </ol>
+    </div>
+  </div>
+  <h2 class="header-underline">Pivot</h2>
+  <p>
+    The management team decided the business model needed to pivot from delivering targeted email based advertising campaigns to providing targeted IP address lists to better leverage and monotize the data.
+  </p>
+  <p>
+    I met with the CTO (who was also the chief architect and lead developer) to formulate an overall plan for the redesign and impact of the IP lists concept.
   </p>
 
-  <h2 class="header-underline">
-    Analysis
-  </h2>
+  <h2 class="header-underline">Plan</h2>
+
+ <p>
+    We established a timeline of deliverables broken into specifc phases.
+
+  </p>
+
   <p>
-    My analysis focused on the following design aspects:
+    Some of the existing page types and concepts could still be used but an entirely new set of designs and functionality were needed for users to be able to generate, download and purchase the IP lists.
+  </p>
+
+  <p>
+    Change the nomenclature to titles instead of artists as some of the torrents in the database are not artist related e.g. software, e-books, movies, etc.
   </p>
   <ul>
-    <li>Navigation and information architecture</li>
-    <li>Labeling</li>
-    <li>Understanding and Easy interaction</li>
-    <li>Search</li>
-    <li>Task orientation</li>
-    <li>Content hierarchy and quality</li>
-    <li>Global Layout</li>
-    <li>Aesthetics and Visual design</li>
+    <li> which impacts the navigation and a </li>
   </ul>
 
-
-<h3>
-  Navigation
-</h3>
-
-    <figure>
-        <%= image_tag("muzit-trace-v1-browser-nav.png", alt:"", class: "responsive box-shadow") %>
-    </figure>
-
-
-
-
-  <p>
-    We think that by tackling these elements, the overall user experience can be enhanced. Moreover, the recommendations given are thought as a guideline that should be considered and when possible, replicated in other sections of the application to provide a consistent user experience.
-  </p>
-
-
+  <h3>IP Lists Specification</h3>
   <ol>
-    <li>Preheat oven to 425&deg;F</li>
-    <li>Mix all the ingredients
+    <li>
+      Lists would be collections of IP addresses based on titles, countries and regions.
     </li>
-    <li>Dump it all into a greased pan</li>
-    <li>Bake for 40 minutes</li>
-    <li>Take out and let cool 30 mintes</li>
-    <li>Eat</li>
+    <li>
+      Users can add their own list.
+    </li>
+    <li>A List needs to be generated first because the number of IP addresses associated with a list changes by the second depending on download trends and real-time geographic data.</li>
+    <li> When the list has been generated it is added to the Download Lists section and can be purchased using a credit card and an email will be sent with the purchase details. </li>
+    <li>After a list is purchased a list it can be downloaded. </li>
   </ol>
+  <h4 class="text-center">IP List User Flow </h4>
+  <figure class="text-center">
+    <%= image_tag("muzit/trace-ip-lists-user-flow.png", alt: "Diagram of IP address lists user flow", class: "responsive", height: "582", width: "622") %>
+  </figure>
 
+
+
+
+
+
+
+
+  <h2 class="header-underline">Redesign</h2>
+  <p>
+    The design process started with creating a high-fildelity prototype using the Ruby based
+    <%= link_to "Middleman", "https://middlemanapp.com", target: "_blank" %> static site generator to derive the page layouts and components. This method allowed me to quickly iterate on the designs and gave the team a very realistic representation of the design and functionality during the reviews. Furthermore the underlying HTML/CSS/SASS code could be implemented directly into the Rails application environment which saved development time.
+  </p>
+  <h3>PHASE <span>01</span></h3>
+  <h4 class="text-center">
+    Navigation
+  </h4>
+  <div class="summary full-bleed">
+    <div class="container">
+      <p>
+        With the nomenclature decided I consolidated the Muzit admin sidebar into one dropdown simplifying the navigation and added headers to organize the realated navigational elements.
+      </p>
+    </div>
+  </div>
+  <div class="redesign">
+    <figure class="text-center">
+      <%= image_tag("muzit/trace-nav-mobile.png", alt: "Screenshot of Muzit navigation redesign on mobile device", class: "responsive", height: "", width: "250") %>
+    </figure>
+    <figure>
+      <%= image_tag("muzit/trace-nav-desktop-frame.png", alt: "Screenshot of Muzit navigation redesign on desktop", class: "responsive", height: "684", width: "1231") %>
+    </figure>
+  </div>
+  <h4 class="text-center">
+    Search
+  </h4>
+  <div class="summary full-bleed">
+    <div class="container">
+      <p>
+        The search input width was increased to accomodate long title names. The search results &quot;Existing&quot; label was removed and title descriptions were added to differentiate titles with the same name.
+      </p>
+    </div>
+  </div>
+  <div class="redesign text-center">
+    <figure>
+      <%= image_tag("muzit/trace-search-mobile.png", alt: "Screenshot of Muzit search redesign on mobile device", class: "responsive", height: "", width: "250") %>
+    </figure>
+    <figure>
+      <%= image_tag("muzit/trace-search-desktop.png", alt: "Screenshot of Muzit search redesign on desktop", class: "responsive", height: "684", width: "1231") %>
+    </figure>
+  </div>
+  <h3>PHASE <span>02</span></h3>
+  <h4 class="text-center">
+    Dashboard
+  </h4>
+  <div class="summary full-bleed">
+    <div class="container">
+      <p>
+        The dashboard designs needed to reflect two user states. One for users signing in first time and the other when they are following a title. A video was also created to show first time users how to follow a title.
+      </p>
+    </div>
+  </div>
+  <div class="redesign">
+    <figure class="text-center">
+      <%= image_tag("muzit/trace-dashboard-follow-titles-mobile.png", alt: "Screenshot of Muzit follow titles page redesign on mobile device", class: "responsive", height: "", width: "250") %>
+    </figure>
+    <figure>
+      <%= image_tag("muzit/trace-dashboard-follow-titles-desktop.png", alt: "Screenshot of Muzit follow titles page redesign on desktop", class: "responsive", height: "948", width: "1259") %>
+    </figure>
+  </div>
+  <div class="redesign">
+    <figure class="text-center">
+      <%= image_tag("muzit/trace-dashboard-following-titles-mobile.png", alt: "Screenshot of Muzit dashboard redesign when following titles on mobile device", class: "responsive", height: "", width: "250") %>
+    </figure>
+    <figure>
+      <%= image_tag("muzit/trace-dashboard-following-titles-desktop.png", alt: "Screenshot of Muzit dashboard redesign when following titles on desktop", class: "responsive", height: "808", width: "1263") %>
+    </figure>
+  </div>
+  <h3>PHASE <span>03</span></h3>
+  <h4 class="text-center">
+    Title Details
+  </h4>
+  <div class="summary full-bleed">
+    <div class="container">
+      <p>
+        The title image was changed to a full width hero image with title meta data icons and figures designed to respond to viewport widths. Worldwide Stats date range functionality is applied to each module. The Traffic Origins Countries were made clickable so users can drill down to a state/province. The Recent Torrents and Details sections were incorportated into the page instead of a separate tabs.
+      </p>
+    </div>
+  </div>
+  <div class="redesign">
+    <figure class="text-center">
+      <%= image_tag("muzit/trace-title-details-mobile.png", alt: "Screenshot of Muzit title details redesign on mobile device", class: "responsive", height: "", width: "250") %>
+    </figure>
+    <figure>
+      <%= image_tag("muzit/trace-title-details-desktop.png", alt: "Screenshot of Muzit title details redesign on desktop", class: "responsive", height: "3773", width: "1141") %>
+    </figure>
+  </div>
+  <h3>PHASE <span>04</span></h3>
+  <h4 class="text-center">
+    IP Address Lists
+  </h4>
+  <div class="summary full-bleed">
+    <div class="container">
+      <p>
+        IP Lists on mobile utilize segmented controls so users can readily see and view the IP lists and Downloads. An alert and Help Center were designed to inform users how IP Lists work. Iconography is used to add lists and view the full lists.
+      </p>
+    </div>
+  </div>
+  <div class="redesign">
+    <figure class="text-center">
+      <%= image_tag("muzit/trace-dashboard-ip-lists-mobile.png", alt: "Screenshot of Muzit dashboard with IP lists redesign on mobile device", class: "responsive", height: "", width: "250") %>
+    </figure>
+    <figure class="text-center">
+      <%= image_tag("muzit/trace-dashboard-ip-list-downloads.png", alt: "Screenshot of Muzit dashboard IP lists showing downloads selected on mobile device", class: "responsive", height: "", width: "250") %>
+    </figure>
+    <figure>
+      <%= image_tag("muzit/trace-dashboard-following-titles-ip-lists-desktop.png", alt: "Screenshot of Muzit dashboard with IP lists redesign on desktop", class: "responsive", height: "1524", width: "1260") %>
+    </figure>
+  </div>
+
+  <h2 class="header-underline">Title Details</h2>
+  <p>
+    The goal here is to apply the Gestalt Principle of proximity to bring unity in the branding and informing users that both the elements are part of the same design element </p>
+  <p>
+    Proximity is used for indicating relatedness between elements in a design.
+  </p>
 </div>
