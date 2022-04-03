@@ -9,16 +9,6 @@
     minmax(1.5em, 1fr) [full-end];
 }
 
-@media (min-width: 62em) {
-  .container {
-    /*set main column to 992px 62rem x 16 (base font-size) */
-    grid-template-columns:
-      [full-start] minmax(1.5em, 1fr)
-      [main-start] minmax(0, 62em) [main-end]
-      minmax(1.5em, 1fr) [full-end];
-  }
-}
-
 .container > * {
   grid-column: main-start ;
 }
@@ -27,9 +17,10 @@
   grid-column: full-start / full-end;
 }
 
-@media (min-width: 48em) {
+@media only screen and (min-width: 48em) {
   .col-2 {
     display: inherit;
+    grid-column-gap: 2em;
     grid-template-columns: repeat(2, 1fr);
   }
 
