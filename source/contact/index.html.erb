@@ -1,30 +1,78 @@
 ---
-title: Andrew Lawton - Contact
+title: Contact Me | Andrew Lawton
 metaDescription:
 metaKeywords:
 bodyClass:
 ---
+
 <div class="container">
   <h1 class="header-underline">
     Contact Me
   </h1>
-  <form class="contact" name="frm" action="/cgi-bin/FormMail.index.pl" method="post" id="contactForm">
+  <p class="text-center" style="font-size: 1.5rem;">
+    Thank you for visiting.<br>Have a question? Feel free to drop me a line...
+  </p>
+  <form class="contact" action="/cgi-bin/FormMail.index.pl" method="post">
     <fieldset>
       <div class="field">
-        <label for="name">Name</label>
-        <input id="name" name="fullname" minlength="2" type="text" placeholder="Enter your full name" required>
+        <input id="name" minlength="2" type="text" name="name" placeholder="name" required>
+        <label for="name" class="required">Name</label>
       </div>
       <div class="field">
-        <label for="email">E-Mail (required)</label>
-        <input id="email" type="email" name="email" placeholder="name@domain.com" required>
+        <input id="email" type="email" name="email" placeholder="name@domin" required>
+        <label for="email" class="required">E-Mail</label>
       </div>
       <div class="field">
-        <label for="comment">Your comment (required)</label>
-        <textarea id="comment" name="comment" placeholder="Enter your full name" required></textarea>
+        <textarea id="message" placeholder="Message" required></textarea>
+        <label for="message" class="required">Message</label>
       </div>
-      <div class="field center">
-        <input class="btn-primary" type="submit" value="Send">
+      <div class="field captcha">
+        <label for="generated-captcha">Captcha</label>
+        <input type="text" id="generated-captcha" readonly>
+        <a href="javascript:void(0);" onclick="generateCaptcha()">
+          Refresh
+        </a>
+      </div>
+      <div class="field">
+        <input type="text" id="captcha-input" placeholder="Enter captcha" required>
+        <label for="captcha-input" class="required">Enter Captcha</label>
+      </div>
+      <div class="field text-center">
+        <button class="btn" type="submit" name="submit" onclick="checkCaptcha()">Send</button>
       </div>
     </fieldset>
   </form>
 </div>
+<script>
+  let captcha;
+  let alphabets = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+  console.log(alphabets.length);
+
+  generateCaptcha = () => {
+    // console.log(status)
+    let first = alphabets[Math.floor(Math.random() * alphabets.length)];
+    let second = Math.floor(Math.random() * 10);
+    let third = Math.floor(Math.random() * 10);
+    let fourth = alphabets[Math.floor(Math.random() * alphabets.length)];
+    let fifth = alphabets[Math.floor(Math.random() * alphabets.length)];
+    let sixth = Math.floor(Math.random() * 10);
+    captcha = first.toString() + second.toString() + third.toString() + fourth.toString() + fifth.toString() + sixth.toString();
+    console.log(captcha);
+    document.getElementById('generated-captcha').value = captcha;
+    document.getElementById("captcha-input").value = '';
+  }
+
+  checkCaptcha = () => {
+    // console.log(status)
+    let userValue = document.getElementById("captcha-input").value;
+    console.log(captcha);
+    console.log(userValue);
+    if (userValue != captcha) {
+        document.getElementById("captcha-input").value = '';
+    } else {
+
+    }
+  }
+  // generate captcha on page load
+  document.getElementById("generated-captcha").addEventListener("load", generateCaptcha());
+</script>
