@@ -1,6 +1,7 @@
 nav {
   padding: .5rem 0;
   position: fixed;
+  top: 0;
   transition: all .5s ease-in-out;
   width: 100%;
   z-index: 2;
@@ -114,13 +115,17 @@ nav {
             &::before {
               content: "";
               position: absolute;
+              bottom: -2px;
               left: 50%;
               right: 50%;
-              bottom: -2px;
-              background: #cd2026;
+              border-bottom: 3px solid #cd2026;
               height: 3px;
               opacity: 0;
               transition: all 0.2s ease-out;
+            }
+
+            &.active {
+              border-bottom: 3px solid #cd2026;
             }
 
             &:hover {
