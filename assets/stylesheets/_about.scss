@@ -1,0 +1,37 @@
+// ==============================
+// About
+// ==============================
+
+header {
+  &.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0 0 0;
+    img {
+      border-radius: 100%;
+      border: 2px solid #212121;
+      height: 150px;
+      width: 150px;
+    }
+  }
+}
+
+.avatar {
+  -webkit-animation-name: avatar;
+  -webkit-animation-duration: .9s; }
+
+@-webkit-keyframes avatar {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0; }
+  50% {
+    -webkit-transform: scale(0);
+    opacity: 0; }
+  82.5% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1; }
+  to {
+    -webkit-transform: scale(1); }
+  }
