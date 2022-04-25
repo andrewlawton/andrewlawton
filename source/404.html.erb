@@ -11,18 +11,8 @@ bodyClass: home
     display:  flex;
     align-items: center;
     justify-content: center;
-    /*border:  1px solid #f00;*/
     height:  100vh;
 
-  }
-
-  .error-404 div {
-    /*height: 60vh;*/
-    /*width:  60vw;*/
-    /*border:  1px solid #0f0;*/
-    /*margin:  2em 0;*/
-
-    /*height:  50%;*/
   }
 
   abbr {
@@ -59,7 +49,7 @@ bodyClass: home
       <abbr title="I don't know">¯\_(ツ)_/¯</abbr>
       <h1>404</h1>
       <p>Sorry! Page not found.</p>
-      <a href="/index.html" class="btn">Home</a>
+      <%= link_to "Home", "/index.html", class: "btn btn-dark"  %>
     </div>
   </div>
 </div>
