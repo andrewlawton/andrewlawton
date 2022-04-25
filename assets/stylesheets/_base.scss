@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -30,8 +32,10 @@ main {
   flex: 1 0 auto;
   margin-top: 50px;
 
-  a {
-    box-shadow: 0px 0px 0px #cd2026;
+  a:not(.btn) {
+  //color: green;
+    //box-shadow: 0px 0px 0px #cd2026;
+
     color: #cd2026;
     text-decoration-line: none;
     text-decoration-style: initial;
@@ -40,11 +44,12 @@ main {
     font-weight: 600;
 
     &:hover {
-      box-shadow: 0px 2px 0px #cd2026;
+      border-bottom: 2px solid #cd2026;
+      //box-shadow: 0px 2px 0px #cd2026;
       transition-duration: 200ms;
       transition-timing-function: initial;
       transition-delay: initial;
-      transition-property: box-shadow;
+      transition-property: border-bottom;
     }
   }
 
@@ -54,37 +59,71 @@ main {
   }
 }
 
-a.btn {
-  width: auto;
-  background: #000;
-  border-bottom: none;
-  border-radius: 50px;
-  box-shadow: none;
-  color:  #fff;
+.btn {
+
+
   display: inline-block;
-  font-size:  .75em;
-  font-family: "Poppins";
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: inherit;
+  color: #fff;
   text-align: center;
-  letter-spacing: 1px;
-  padding: .75rem 2rem;
   text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding: .70rem 2rem;
+  font-size: .80rem;
+  border-radius: 50px;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   text-transform: uppercase;
-  transition: all 0.2s ease 0s;
+  letter-spacing: 1px;
+
+  &.btn-dark {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+  }
+
+  &.btn-outline {
+    border-color: #000;
+    color: #212121;
+  }
 
   &:hover {
-    background: #cd2026;
+    background-color: #cd2026;
+    border-color: #cd2026;
     color: #fff;
   }
 }
 
+.flex {
+  display: flex;
+}
+
+.intro {
+  font-size: 1.25rem;
+  margin: 3em 0;
+}
+
+.background-alt {
+   background-color: #f5f5f7;
+}
+
 .project {
   overflow: hidden;
-  position:  relative;
+  position: relative;
+
   a {
     background: none;
     border-bottom: none;
-    display:  block;
+    display: block;
     position: inherit;
+
     &:hover {
       background: inherit;
       box-shadow: none;
@@ -92,6 +131,7 @@ a.btn {
       color: transparent;
     }
   }
+
   .name {
     color: #fff;
     left: 0;
@@ -99,7 +139,7 @@ a.btn {
     right: 0;
     text-shadow: 1px 1px #111;
     bottom: 10%;
-    width:  auto;
+    width: auto;
     /* allow image to recieve hover event transition effect from absolute positioned element */
     pointer-events: none;
 
@@ -110,14 +150,101 @@ a.btn {
 
   img {
     display: block;
-    max-height:  550px;
+    max-height: 550px;
     object-fit: cover;
     width: 100%;
     transition: all 0.8s ease;
+
     &:hover {
-      transform:  scale(1.1);
+      transform: scale(1.1);
     }
   }
+}
+
+.tile {
+  background-color: #fff;
+  margin-bottom: 3rem;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+
+  &.tile-rounded {
+    border-radius: 0.25em;
+  }
+}
+
+.section-flex-tiles {
+
+  .tile {
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: 734px) {
+      max-width: 350px;
+    }
+
+    .tile-content {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      @media only screen and (min-width: 734px) {
+        flex-direction: row;
+      }
+    }
+
+    .text {
+      margin: 0 2rem 2em 1rem;
+      max-width: 100%;
+      order: 1;
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+
+      a:hover {
+        box-shadow: none;
+      }
+
+      p {
+        margin-bottom: 2em;
+      }
+
+      @media only screen and (min-width: 734px) {
+        display: inline-block;
+        max-width: 350px;
+        order: 2;
+      }
+
+      &.flipped {
+        @media only screen and (min-width: 734px) {
+          order: 1;
+        }
+      }
+    }
+
+    .image {
+      align-items: flex-end;
+      order: 2;
+
+      @media only screen and (min-width: 734px) {
+        display: inline-block;
+        margin: 0 1rem 0 2rem;
+        order: 1;
+      }
+
+      img {
+        border-radius: 0 0 0.25em 0.25em;
+        display: block;
+
+        @media only screen and (min-width: 734px) {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+
 }
 
 .invisible {
