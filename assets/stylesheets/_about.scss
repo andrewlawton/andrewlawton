@@ -8,6 +8,7 @@ header {
     align-items: center;
     justify-content: center;
     margin: 3rem 0 0 0;
+
     img {
       border-radius: 100%;
       border: 2px solid #212121;
@@ -17,21 +18,219 @@ header {
   }
 }
 
-.avatar {
-  -webkit-animation-name: avatar;
-  -webkit-animation-duration: .9s; }
+.section-content {
+  padding: 4rem 2rem;
+}
 
-@-webkit-keyframes avatar {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0; }
-  50% {
-    -webkit-transform: scale(0);
-    opacity: 0; }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1; }
-  to {
-    -webkit-transform: scale(1); }
+.tile {
+  box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.1);
+  border-top: 3px solid #cd2026;
+  padding: 0 1rem 1rem 1rem;
+
+  h5 {
+    margin: 1.5rem 0;
+    white-space: nowrap;
   }
+}
+
+// .avatar {
+//   -webkit-animation-name: avatar;
+//   -webkit-animation-duration: .9s;
+// }
+
+// @-webkit-keyframes avatar {
+//   from {
+//     -webkit-transform: scale(0);
+//     opacity: 0;
+//   }
+
+//   50% {
+//     -webkit-transform: scale(0);
+//     opacity: 0;
+//   }
+
+//   82.5% {
+//     -webkit-transform: scale(1.03);
+//     -webkit-animation-timing-function: ease-out;
+//     opacity: 1;
+//   }
+
+//   to {
+//     -webkit-transform: scale(1);
+//   }
+// }
+
+// ==============================
+// Rotating Words
+// ==============================
+
+.rw-wrapper {
+  position: relative;
+}
+
+.rw-sentence {
+  margin: 4rem 0;
+  padding-bottom: 3rem;
+  @media only screen and (min-width: 48em) {
+    padding-bottom: 0rem;
+  }
+
+  span {
+    font-weight: normal;
+  }
+}
+
+.rw-words {
+  @media only screen and (min-width: 48em) {
+    display: inline;
+    text-indent: .25em;
+  }
+}
+
+.rw-word {
+  span {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    font-weight: 900;
+    -webkit-animation: rotateWord 18s linear infinite 0s;
+    -ms-animation: rotateWord 18s linear infinite 0s;
+    animation: rotateWord 18s linear infinite 0s;
+
+    &:nth-child(2) {
+      -webkit-animation-delay: 3s;
+      -ms-animation-delay: 3s;
+      animation-delay: 3s;
+    }
+
+    &:nth-child(3) {
+      -webkit-animation-delay: 6s;
+      -ms-animation-delay: 6s;
+      animation-delay: 6s;
+    }
+
+    &:nth-child(4) {
+      -webkit-animation-delay: 9s;
+      -ms-animation-delay: 9s;
+      animation-delay: 9s;
+    }
+
+    &:nth-child(5) {
+      -webkit-animation-delay: 12s;
+      -ms-animation-delay: 12s;
+      animation-delay: 12s;
+    }
+
+    &:nth-child(6) {
+      -webkit-animation-delay: 15s;
+      -ms-animation-delay: 15s;
+      animation-delay: 15s;
+    }
+  }
+}
+
+@-webkit-keyframes rotateWord {
+  0% {
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+  }
+
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes rotateWord {
+  0% {
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 0;
+    -ms-transform: translateY(-30px);
+  }
+
+  5% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+
+  17% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+
+  20% {
+    opacity: 0;
+    -ms-transform: translateY(30px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotateWord {
+  0% {
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
