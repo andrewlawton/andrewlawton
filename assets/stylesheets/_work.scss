@@ -134,46 +134,38 @@ ul.criteria li::before {
 }
 
 .bgimg-1,
-  .bgimg-2,
-  .bgimg-3 {
-    position: relative;
-    //opacity: 0.85;
-    background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  //opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    background-color: #111;
+  background-color: #111;
 
-    height : 100vh;
-  }
-
-  .bgimg-1 {
-    background-image: url("/images/muzit-home.jpg");
-    height: 380px;
-    //width: 100%;
-
-
-  }
-
-  .bgimg-2 {
-    //background-image: url("parallax-muzit-hero.jpg");
-    min-height: 400px;
-  }
-
-  .bgimg-3 {
-    //background-image: url("img_parallax3.jpg");
-    min-height: 400px;
-  }
-
-.work {
-  &.projects main {
-    background-color: #f5f5f7;
-  }
+  height : 100vh;
 }
 
-@media(min-width: 768px) {
+.bgimg-1 {
+  background-image: url("/images/muzit-home.jpg");
+  height: 380px;
+  //width: 100%;
+}
 
+.bgimg-2 {
+  //background-image: url("parallax-muzit-hero.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  //background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
+
+
+@media(min-width: 768px) {
   .work main .col-2 {
     grid-gap: 3rem;
     grid-template-areas: "img content";
