@@ -166,18 +166,10 @@ ul.criteria li::before {
     min-height: 400px;
   }
 
-
-
-.work .intro {
-  font-size: 1.25rem;
-  margin: 3em 0;
-}
-
 .work {
   &.projects main {
     background-color: #f5f5f7;
   }
-
 }
 
 @media(min-width: 768px) {
