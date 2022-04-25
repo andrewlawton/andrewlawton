@@ -4,7 +4,6 @@ metaDescription:
 metaKeywords:
 bodyClass: work
 ---
-
 <div class="container">
   <header class="hero full-bleed">
     <figure>
@@ -47,7 +46,7 @@ bodyClass: work
           </ul>
         </div>
       </div>
-  </div>
+    </div>
   </section>
   <h2 class="header-underline">Challenge</h2>
   <p>
@@ -286,12 +285,16 @@ bodyClass: work
     </div>
   </div>
   <div class="redesign">
-    <figure class="text-center">
-      <%= image_tag("muzit/trace-dashboard-ip-lists-mobile.png", alt: "Screenshot of Muzit dashboard with IP lists redesign on mobile device", class: "responsive", height: "", width: "250") %>
-    </figure>
-    <figure class="text-center">
-      <%= image_tag("muzit/trace-dashboard-ip-list-downloads.png", alt: "Screenshot of Muzit dashboard IP lists showing downloads selected on mobile device", class: "responsive", height: "", width: "250") %>
-    </figure>
+    <div class="container">
+      <div class="col-2">
+        <figure class="text-center">
+          <%= image_tag("muzit/trace-dashboard-ip-lists-mobile.png", alt: "Screenshot of Muzit dashboard with IP lists redesign on mobile device", class: "responsive", height: "", width: "250") %>
+        </figure>
+        <figure class="text-center">
+          <%= image_tag("muzit/trace-dashboard-ip-list-downloads.png", alt: "Screenshot of Muzit dashboard IP lists showing downloads selected on mobile device", class: "responsive", height: "", width: "250") %>
+        </figure>
+      </div>
+    </div>
     <figure>
       <%= image_tag("muzit/trace-dashboard-following-titles-ip-lists-desktop.png", alt: "Screenshot of Muzit dashboard with IP lists redesign on desktop", class: "responsive", height: "1524", width: "1260") %>
     </figure>
