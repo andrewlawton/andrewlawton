@@ -7,7 +7,7 @@ bodyClass: work
 <div class="container">
   <header class="hero full-bleed">
     <figure>
-      <%= image_tag("muzit/muzit-hero.jpg", alt: "Screenshot of the Muzit title details page displayed on the desktop", class: "responsive") %>
+      <%= image_tag("biddingforgood-home.jpg", alt:"Image of the BiddingForGood portal on a Macbook screen", class: "responsive") %>
     </figure>
   </header>
   <h1 class="header-underline"> BiddingForGood </h1>
@@ -36,7 +36,6 @@ bodyClass: work
             <li>CSS</li>
             <li>SASS</li>
             <li>JQuery</li>
-            <li>JQuery UI</li>
             <li>GitHub</li>
             <li>Middleman</li>
             <li>Ruby on Rails</li>
@@ -46,55 +45,68 @@ bodyClass: work
     </div>
   </section>
   <p class="intro">
-    Over the course of 12 years I was responsible for the entire front-end design and development of BiddingForGood's product line that encompassed a consumer shopping portal for cause minded shoppers and an auction and event management platform used by over 10,000 non-profit organizations.
+    Over the course of 12 years I was responsible for the entire front-end design and development of BiddingForGood's product line that encompassed a consumer shopping portal for cause minded bidders and an auction and event management platform used by over 10,000 non-profit organizations helping them to raise millions of dollars.
   </p>
-  <h2 class="text-center">
-    Auction Manager
-  </h2>
-  <section>
+  <div class="full-bleed background-alt">
     <div class="container">
-      <div class="col-2 ">
-        <figure class="image">
-          <%= image_tag("biddingforgood/platform-dashboard.png", alt:"Screen shot of BiddingForGood auction manager page.", class:"responsive") %>
-        </figure>
-        <div class="description">
-          <h3>
-            Dashboard
-          </h3>
-          <p>
-            The Auction Manager was designed to be easy to use and flexible for non-profit organizations to easily set-up, promote and manage their online auction fundraiser. From creating the auction and building catalog pages, to tracking the process and evaluating the auctions success.
-          </p>
+      <section class="section-flex-tiles">
+        <div class="section-content">
+          <div class="flex row">
+            <div class="tile tile-rounded">
+              <div class="tile-content">
+                <div class="text text-center">
+                  <h3>
+                    Auction Manager
+                  </h3>
+                  <p>
+                    Designed for non-profits to easily create, promote, process and control every aspect of their auction or live event.
+                  </p>
+                  <%= link_to "Learn more", "auction-manager/index.html", class: "btn btn-dark" %>
+                </div>
+                <div class="image">
+                  <%= image_tag("biddingforgood/platform-dashboard-thumb.png", alt:"", class:"responsive", height: "250", width: "350") %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex row">
+            <div class="tile tile-rounded">
+              <div class="tile-content">
+                <div class="text text-center flipped">
+                  <h3>
+                    Auction Catalog
+                  </h3>
+                  <p>
+                    Non-profits can create a branded homepage to feature items, sell tickets, promote the live event and showcase sponsors.
+                  </p>
+                  <%= link_to "Learn more", "biddingforgood/index.html", class: "btn btn-dark" %>
+                </div>
+                <div class="image">
+                  <%= image_tag("biddingforgood/auction-home-thumb.png", alt:"", class:"responsive", height: "250", width: "350") %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex row">
+            <div class="tile tile-rounded">
+              <div class="tile-content">
+                <div class="text text-center">
+                  <h3>
+                    Portal
+                  </h3>
+                  <p>
+                    Non-profit auction items aggregated into one place where 1.7M cause minded bidders can support charities they care about.
+                  </p>
+                  <%= link_to "Learn more", "/biddingforgood/index.html", class: "btn btn-dark" %>
+                </div>
+                <div class="image">
+                  <%= image_tag("biddingforgood/portal-home-thumb.png", alt:"", class:"responsive", height: "250", width: "350") %>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-  </section>
-  <div class="container">
-    <div class="col-2 reverse">
-      <figure class="image">
-        <%= image_tag("panorama-new-widget.png", alt:"Panorama Create New widget", class:"responsive") %>
-      </figure>
-      <div class="description">
-        <h3>
-          Create Widgets
-        </h3>
-        <p>
-          Customizable widgets can be created based on data sourced from each FrontStream Web site and can be manipulated so clients can gain insight into their overall fundraising activities and decision making.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="col-2">
-      <figure class="image">
-        <%= image_tag("panorama-edit-widget.png", alt:"Panorama Edit Widget", class:"responsive") %>
-      </figure>
-      <div class="description">
-        <h3>
-          Edit Widgets
-        </h3>
-        <p>
-          Client's can easily modify existing widgets to show a different representation of the data.
-        </p>
-      </div>
+      </section>
     </div>
   </div>
 </div>
