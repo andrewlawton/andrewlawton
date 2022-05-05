@@ -59,12 +59,15 @@ bodyClass: work
   <p>
     My evaluation was focused on the following criteria. My recommendations also account for the mobile experience adaptation in the final design.
   </p>
-  <ul class="criteria">
+
+  <h5 style="margin-bottom: 0">Criteria</h5>
+  <ul class="list-style-primary">
     <li>Navigation &amp; Information architecture</li>
     <li>Search</li>
     <li>Visual Design</li>
     <li>Page Layout &amp; Visualization</li>
   </ul>
+
   <h3> Navigation </h3>
   <div class="evaluation">
     <figure>
@@ -76,13 +79,10 @@ bodyClass: work
       <h4>Assessment</h4>
       <ol>
         <li>
-          The Muzit admin related navigation is accessible from two areas of the navigation bar. One to manage accounts, campaigns, add a new artist and approve torrents. The other to update the user profile and log out. Not to say sidebars are bad but in this case impacts the visual hierarchy principle of proximity between the admin sidebar and the admin dropdown.
-        </li>
-        <li>
           Clicking the logo or &quot;TRACES&quot; directs the user to the same page which is redundant and not a standard navigation design convention.
         </li>
         <li>
-          The icons and labels are misaligned.
+          Other than the icons and labels being misaligned the Muzit admin navigation is accessible from two areas of the navigation bar. Not to say sidebars are bad but in this case impacts the visual hierarchy principle of proximity between the sidebar and the dropdown.
         </li>
       </ol>
     </div>
@@ -117,10 +117,18 @@ bodyClass: work
     <div class="container">
       <h4>Assessment</h4>
       <ol>
-        <li> The Artist Traces header and filter input do not expand to the full width of the viewport. </li>
-        <li> The options button is misaligned and visually separated from the aritist image. The background color makes it appear disabled. The button is repeated for each artist on the dashboard which are in the hundreds adding visual clutter and contributing to cognitive overload. </li>
-        <li> The artist options dropdown list items directs the user to the artist details page (see below). This requires the user to use the browser back button each time they need to perform a specifc action within the dropdown. </li>
-        <li> When an artist image in not available the image appears broken. </li>
+        <li>
+          The Artist Traces header and filter input do not expand to the full width of the viewport.
+        </li>
+        <li>
+          The options button background color appears disabled, misaligned in relation to the icon and visually separated from the aritist image. The button is repeated for each artist on the dashboard, which is in the hundreds, and contributes to visual clutter and cognitive overload.
+        </li>
+        <li>
+          The artist options dropdown list items directs the user to the artist details page (see below). This requires the user to use the browser back button each time they need to perform a specifc action within the dropdown.
+        </li>
+        <li>
+          When an artist image in not available the image appears broken.
+        </li>
       </ol>
     </div>
   </div>
@@ -135,7 +143,7 @@ bodyClass: work
       <h4>Assessment</h4>
       <ol>
         <li>
-          Clicking &quot;Follow&quot; toggles the button state to &quot;Following&quot; as plain text. This is an affordance issue. The &quot;Following&quot; state should appear clickable to the user.
+          Clicking &quot;Follow&quot; button toggles the state to &quot;Following&quot; as plain text. This is an affordance issue. The &quot;Following&quot; state should also appear clickable to the user.
         </li>
         <li>
           The header statistics Total Downloaded Songs, Potential Reach and Torrents are misaligned in relation to the icons. The text size is inconsistent causing hierarchy and legibility issues.
@@ -144,7 +152,7 @@ bodyClass: work
           The date range filter dropdown is applied to each metric. Being able to change the date range for each individual metric would improve the user interaction.
         </li>
         <li>
-          The Traffic Origins map visualization allows both macro views and granular views, down to a given state/province. Being able to click the Top Countries list text to drill down to a given state/province would improve the interactivity.
+          Clicking the Traffic Origins map allows both macro views and granular views, down to a given state/province. Being able to click the Top Countries list text to drill down to each state/province would improve the visualization.
         </li>
       </ol>
     </div>
@@ -299,10 +307,4 @@ bodyClass: work
       <%= image_tag("muzit/trace-dashboard-following-titles-ip-lists-desktop.png", alt: "Screenshot of Muzit dashboard with IP lists redesign on desktop", class: "responsive", height: "1524", width: "1260") %>
     </figure>
   </div>
-  <h2>Title Details</h2>
-  <p>
-    The goal here is to apply the Gestalt Principle of proximity to bring unity in the branding and informing users that both the elements are part of the same design element </p>
-  <p>
-    Proximity is used for indicating relatedness between elements in a design.
-  </p>
 </div>
