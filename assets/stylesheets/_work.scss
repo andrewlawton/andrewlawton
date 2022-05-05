@@ -190,3 +190,39 @@ ul.criteria li::before {
     grid-template-areas: "content img";
   }
 }
+
+.work-nav {
+
+  a {
+    color: #212121;
+    font-size: 1.10rem;
+    font-weight: 900;
+    text-decoration: none;
+
+
+
+    &:hover {
+      color: #cd2026;
+      border-bottom: none !important;
+    }
+  }
+  h5 {
+    color: #666;
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+  }
+
+  .col-3 {
+    display: grid;
+    grid-column-gap: 2em;
+    grid-template-columns: repeat(3, 1fr);
+
+    .back {
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .next {
+      text-align: right;
+    }
+  }
+}
