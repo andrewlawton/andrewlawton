@@ -95,6 +95,27 @@ main {
   }
 }
 
+ul.list-style-primary {
+  line-height: 1.5;
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    margin-left: 1em;
+    position: relative;
+    &::before {
+      content: "\2022";
+      color: #cd2026;
+      font-weight: bold;
+      font-size: 1.25em;
+      margin-left: -0.75em;
+      position: absolute;
+      text-align: center;
+      top: -4px;
+      left: 0;
+    }
+  }
+}
+
 .flex {
   display: flex;
 }

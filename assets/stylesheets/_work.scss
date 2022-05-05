@@ -41,29 +41,6 @@
   grid-column-gap: 3em;
 }
 
-ul.criteria {
-  line-height: 1.5;
-  list-style-type: none;
-  padding-left: 0;
-}
-
-ul.criteria li {
-  margin-left: 1.5em;
-  position: relative;
-}
-
-ul.criteria li::before {
-  content: "\2022";
-  color: #cd2026;
-  font-weight: bold;
-  font-size: 2em;
-  margin-left: -0.75em;
-  position: absolute;
-  text-align: center;
-  top: -12px;
-  left: 0;
-}
-
 .evaluation {
   margin-bottom: 1.5rem;
 
