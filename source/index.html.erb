@@ -1,10 +1,9 @@
 ---
-title: Hi, I'm Andrew Lawton | Front-End Web Designer &amp; Developer
-metaDescription: Andrew Lawton Front-End Web Design and Development
-metaKeywords: Andrew Lawton, Andrew, Lawton, Web Design, Web Development, user interface design, HTML, HTML5, CSS, CSS3, front-end, GUI, graphical user interface, interface engineer, Interface Design
+title: Andrew Lawton | User Interface &amp; Interaction Designer
+metaDescription: Andrew Lawton User Interface &amp; Interaction Designer
+metaKeywords: Andrew Lawton, Web Design, Web Development, user interface design, HTML, HTML5, CSS, CSS3, Front-End Design, User Interface Design, Interaction Design
 bodyClass: home
 ---
-
 <div id="loader-container">
   <div id="loader">
     <span>AL</span>
@@ -12,27 +11,41 @@ bodyClass: home
   <div class="loader-section section-top"></div>
   <div class="loader-section section-bottom"></div>
 </div>
-
 <div class="container">
   <div class="hero" data-aos="zoom-in" data-aos-delay="2500" data-aos-offset="200">
     <h1>
       Hi <span class="waving-hand">&#128075;</span>
       I'm <span>Andrew</span>.
     </h1>
-    <h2>I’m a user interface and interaction designer.
+    <h2>I’m a user interface and interaction designer.</h2>
   </div>
-  <h2 class="header-underline">Recent Work</h2>
+  <div class="full-bleed" style="margin: 4rem 0 6rem 0; background-color: #cd2026">
+    <div class="container">
+      <p class="intro" style="font-size: 1.5rem; color: #fff">
+        I solve complex informational and functional requirements through an iterative prototyping process to deliver user-centered interfaces based on the latest design methods, trends and technologies.
+      </p>
+    </div>
+  </div>
+  <h2 class="header-underline" style="margin: 0 0 6rem 0;">Recent Work</h2>
   <section class="full-bleed">
     <div class="project">
       <% link_to "/work/muzit/index.html", class:"" do %>
       <figure>
-        <%= image_tag("muzit-home.jpg", alt:"Muzit item detail hero image") %>
+        <%= image_set_tag "home/recent-work_2000w.jpg", {
+          "home/recent-work_320w.jpg" => "320w",
+          "home/recent-work_821w.jpg" => "821w",
+          "home/recent-work_1163w.jpg" => "1163w",
+          "home/recent-work_1326w.jpg" => "1326w",
+          "home/recent-work_1497w.jpg" => "1497w",
+          "home/recent-work_2000w.jpg" => "2000w"},
+          sizes: "(max-width: 2000px) 100vw, 2000px",
+          alt: "Person holding smart phone with Muzit title details on the screen",
+          class: "responsive" %>
       </figure>
       <div class="container name" data-aos="fade-up">
         <h2>Muzit</h2>
       </div>
       <% end %>
-    </section>
-  </div>
-  <%= partial "partials/contact" %>
+  </section>
 </div>
+<%= partial "partials/contact" %>
