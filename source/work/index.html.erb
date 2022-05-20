@@ -28,9 +28,18 @@ bodyClass: work
     <div class="project">
       <% link_to "/work/muzit/index.html", class:"" do %>
         <figure>
-          <%= image_tag("muzit-home.jpg", alt: "Muzit item detail hero image", class: "responsive") %>
+          <%= image_set_tag "work/muzit_2000w.jpg", {
+            "work/muzit_320w.jpg" => "320w",
+            "work/muzit_821w.jpg" => "821w",
+            "work/muzit_1163w.jpg" => "1163w",
+            "work/muzit_1326w.jpg" => "1326w",
+            "work/muzit_1497w.jpg" => "1497w",
+            "work/muzit_2000w.jpg" => "2000w"},
+            sizes: "(max-width: 2000px) 100vw, 2000px",
+            alt: "Person holding smart phone with Muzit title details on the screen",
+            class: "responsive" %>
         </figure>
-        <div class="container name aos-init aos-animate" data-aos="fade-up">
+        <div class="container name" data-aos="fade-up">
           <h2>Muzit</h2>
         </div>
       <% end %>
@@ -38,9 +47,9 @@ bodyClass: work
     <div class="project">
       <% link_to "/work/frontstream/index.html", class:"" do %>
       <figure>
-        <%= image_tag("frontstream-home.jpg", alt:"Image of mans hand holding an iPhone", class:"responsive") %>
+        <%= image_tag("work/frontstream.jpg", alt:"Person working on a MacBook with ApproveForGood dashboard on screen", class:"responsive") %>
       </figure>
-      <div class="container name">
+      <div class="container name" data-aos="fade-up">
         <h2>FrontStream</h2>
       </div>
       <% end %>
@@ -48,9 +57,9 @@ bodyClass: work
     <div class="project">
       <% link_to "/work/biddingforgood/index.html", class:"" do %>
       <figure>
-        <%= image_tag("biddingforgood-home.jpg", alt:"Image of the BiddingForGood portal on a Macbook screen") %>
+        <%= image_tag("work/biddingforgood.jpg", alt:"Person woring on a MacBook with BiddingForGood portal on screen") %>
       </figure>
-      <div class="container name">
+      <div class="container name" data-aos="fade-up">
         <h2>BiddingForGood</h2>
       </div>
       <% end %>
