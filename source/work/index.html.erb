@@ -8,7 +8,7 @@ bodyClass: work
 <div class="container">
   <h2 class="header-underline">Work</h2>
   <div class="full-bleed">
-    <div class="project">
+    <div class="work-image">
       <% link_to "/work/muzit/index.html", class:"" do %>
         <figure>
           <%= image_set_tag "work/muzit_2000w.jpg", {
@@ -22,29 +22,47 @@ bodyClass: work
             alt: "Person holding smart phone with Muzit title details on the screen",
             class: "responsive" %>
         </figure>
-        <div class="container name" data-aos="fade-up">
+        <div class="container company-name" data-aos="fade-up">
           <h2>Muzit</h2>
         </div>
       <% end %>
     </div>
-    <div class="project">
+    <div class="work-image">
       <% link_to "/work/frontstream/index.html", class:"" do %>
-      <figure>
-        <%= image_tag("work/frontstream.jpg", alt:"Person working on a MacBook with ApproveForGood dashboard on screen", class:"responsive") %>
-      </figure>
-      <div class="container name" data-aos="fade-up">
-        <h2>FrontStream</h2>
-      </div>
+        <figure>
+          <%= image_set_tag "work/frontstream_2000w.jpg", {
+            "work/frontstream_320w.jpg" => "320w",
+            "work/frontstream_1104w.jpg" => "1104w",
+            "work/frontstream_1408w.jpg" => "1408w",
+            "work/frontstream_1665w.jpg" => "1665w",
+            "work/frontstream_1977w.jpg" => "1977w",
+            "work/frontstream_2000w.jpg" => "2000w"},
+            sizes: "(max-width: 2000px) 100vw, 2000px",
+            alt: "Woman working on laptop with ApproveForGood dashboard design on the screen",
+            class: "responsive" %>
+        </figure>
+        <div class="container company-name" data-aos="fade-up">
+          <h2>FrontStream</h2>
+        </div>
       <% end %>
     </div>
-    <div class="project">
+    <div class="work-image">
       <% link_to "/work/biddingforgood/index.html", class:"" do %>
-      <figure>
-        <%= image_tag("work/biddingforgood.jpg", alt:"Person woring on a MacBook with BiddingForGood portal on screen") %>
-      </figure>
-      <div class="container name" data-aos="fade-up">
-        <h2>BiddingForGood</h2>
-      </div>
+        <figure>
+          <%= image_set_tag "work/biddingforgood_2000w.jpg", {
+            "work/biddingforgood_320w.jpg" => "320w",
+            "work/biddingforgood_789w.jpg" => "789w",
+            "work/biddingforgood_1287w.jpg" => "1287w",
+            "work/biddingforgood_1604w.jpg" => "1604w",
+            "work/biddingforgood_1897w.jpg" => "1897w",
+            "work/biddingforgood_2000w.jpg" => "2000w"},
+            sizes: "(max-width: 2000px) 100vw, 2000px",
+            alt: "Person working on laptop with BiddingForGood homepage design on the screen",
+            class: "responsive" %>
+        </figure>
+        <div class="container company-name" data-aos="fade-up">
+          <h2>BiddingForGood</h2>
+        </div>
       <% end %>
     </div>
   </div>
