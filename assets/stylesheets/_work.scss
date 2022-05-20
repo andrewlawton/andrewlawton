@@ -60,35 +60,6 @@
     font-size: 1.25rem;
   }
 
-  ol {
-    counter-reset: li;
-    list-style-type: none;
-    line-height: 1.25;
-    margin-top: 0;
-    padding-left: 0;
-
-    li {
-      padding: 6px 0 6px 2rem;
-      position: relative;
-
-      &:before {
-        background: #212121;
-        border: 1px solid #212121;
-        border-radius: 50%;
-        color: #fff;
-        content: counter(li);
-        counter-increment: li;
-        font-size: .90rem;
-        height: 20px;
-        text-align: center;
-        position: absolute;
-        left: 0;
-        top: 6px;
-        width: 20px;
-      }
-    }
-  }
-
   p {
     font-size:  1.15rem;
     margin: 2em 0;
@@ -101,18 +72,16 @@
 }
 
 .redesign {
-  img {
-    margin-top: 3rem;
-   }
+  // img {
+  //   margin-top: 3rem;
+  //  }
 }
 
 .work .box-shadow {
   box-shadow: 1px 3px 3px -1px rgba(33,33,33,0.25);
 }
 
-.bgimg-1,
-.bgimg-2,
-.bgimg-3 {
+.parallax {
   position: relative;
   //opacity: 0.85;
   background-attachment: fixed;
@@ -123,13 +92,20 @@
   background-color: #111;
 
   height : 100vh;
+  //height: 500px;
+
+  &.muzit-hero {
+    background-image: url("/images/muzit/muzit-hero_2246w.jpg");
+  }
+
+  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+  @media only screen and (max-device-width: 48em) {
+      background-attachment: scroll;
+  }
 }
 
-.bgimg-1 {
-  background-image: url("/images/muzit-home.jpg");
-  height: 380px;
-  //width: 100%;
-}
+
+
 
 .bgimg-2 {
   //background-image: url("parallax-muzit-hero.jpg");
