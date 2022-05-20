@@ -165,22 +165,6 @@ main {
   }
 }
 
-// browser frame https://codepen.io/Vincenius/pen/JjGpGPP
-
-.mockup {
-  background: #fff;
-  border-radius: 2px;
-  overflow: hidden;
-  //box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  margin: 3rem 0;
-  border: 1px solid #ccc;
-
-  img,
-  video {
-    border-radius: 0 0 2px 2px;
-  }
-}
-
 .display-none {
   display: none;
 }
@@ -250,42 +234,55 @@ main {
 }
 
 
+// browser frame https://codepen.io/Vincenius/pen/JjGpGPP
 
-.mockup header {
-  height: 25px;
-  width: 100%;
-  background: #e8e8e8;
-  display: flex;
-  align-items: center;
-}
+.browser-mockup {
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 3rem 0;
+  border: 1px solid #ccc;
 
-.mockup .dots,
-.mockup .dots::before,
-.mockup .dots::after {
-  width: var(--dot-size);
-  height: var(--dot-size);
-  border-radius: var(--dot-size);
-}
+  img,
+  video {
+    border-radius: 0 0 2px 2px;
+  }
 
-.mockup .dots {
-  margin: 0 calc(var(--dot-size) * 2.5);
-  background-color: #ffbb00;
-}
+  .tool-bar {
+    height: 25px;
+    width: 100%;
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+    position: relative;
 
-.mockup .dots::before,
-.mockup .dots::after {
-  content: " ";
-  position: absolute;
-}
+    .buttons {
+      background-color: #ffbb00;
+      border-radius: var(--browser-mockup-button-size);
+      height: var(--browser-mockup-button-size);
+      margin: 0 calc(var(--browser-mockup-button-size) * 2.5);
+      width: var(--browser-mockup-button-size);
 
-.mockup .dots::before {
-  margin: 0 calc(var(--dot-size) * -1.5);
-  background-color: #ff4f4d;
-}
+       &::before,
+       &::after {
+        content: "";
+        border-radius: inherit;
+        height: inherit;
+        position: absolute;
+        width: inherit;
+      }
 
-.mockup .dots::after {
-  margin: 0 calc(var(--dot-size) * 1.5);
-  background-color: #00ce15;
+      &::before {
+        margin: 0 calc(var(--browser-mockup-button-size) * -1.5);
+        background-color: #ff4f4d;
+      }
+
+      &::after {
+        margin: 0 calc(var(--browser-mockup-button-size) * 1.5);
+        background-color: #00ce15;
+      }
+    }
+  }
 }
 
 .content {
@@ -302,8 +299,6 @@ main {
       justify-content: center;
   }
 }
-
-
 
 .intro {
   font-size: 1.25rem;
