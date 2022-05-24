@@ -7,25 +7,37 @@ bodyClass: work
 <div class="container">
   <header class="hero full-bleed">
     <figure>
-      <%= image_tag("biddingforgood-home.jpg", alt:"Image of the BiddingForGood portal on a Macbook screen", class: "responsive") %>
+      <%= image_set_tag "work/biddingforgood_2000w.jpg", {
+        "work/biddingforgood_320w.jpg" => "320w",
+        "work/biddingforgood_789w.jpg" => "789w",
+        "work/biddingforgood_1287w.jpg" => "1287w",
+        "work/biddingforgood_1604w.jpg" => "1604w",
+        "work/biddingforgood_1897w.jpg" => "1897w",
+        "work/biddingforgood_2000w.jpg" => "2000w"},
+        sizes: "(max-width: 2000px) 100vw, 2000px",
+        alt: "Person working on laptop with BiddingForGood homepage design on the screen",
+        class: "responsive" %>
     </figure>
   </header>
-  <h1 class="header-underline"> BiddingForGood </h1>
+  <h1 class="header-underline">
+    BiddingForGood
+  </h1>
   <section class="full-bleed project-details">
     <div class="container">
       <div class="col-3">
         <div>
           <h3>Overview</h3>
           <p>
-            BiddingForGood is an auction and event management platform that enables schools, non-profits and charities to run auctions and events to raise money for their specifc cause.
+            BiddingForGood is an e-commerce auction and event management platform that enables schools, non-profits and charities to run auctions and events to raise money for their specifc cause.
           </p>
         </div>
         <div>
           <h3>Role</h3>
           <ul>
-            <li>Design</li>
-            <li>Rapid Prototyping</li>
+            <li>UI Design</li>
+            <li>Hi-Fi Prototyping</li>
             <li>Interaction Design</li>
+            <li>Usability Testing</li>
             <li>Cross Browser and Functional Testing</li>
           </ul>
         </div>
@@ -45,68 +57,234 @@ bodyClass: work
     </div>
   </section>
   <p class="intro">
-    Over the course of 12 years I was responsible for the entire front-end design and development of BiddingForGood's product line that encompassed a consumer shopping portal for cause minded bidders and an auction and event management platform used by over 10,000 non-profit organizations helping them to raise millions of dollars.
+    Over the course of 12 years I was responsible for the entire front-end design and development of BiddingForGood's product line that encompassed a consumer shopping portal  and an auction and event management platform used by over 10,000 non-profit organizations helping them to raise millions of dollars.
   </p>
-  <div class="full-bleed background-alt">
+  <h2 class="text-center">
+    Portal
+  </h2>
+  <div class="summary full-bleed">
     <div class="container">
-      <section class="section-flex-tiles">
-        <div class="section-content">
-          <div class="flex row">
-            <div class="tile tile-rounded">
-              <div class="tile-content">
-                <div class="text text-center">
-                  <h3>
-                    Auction Manager
-                  </h3>
-                  <p>
-                    Designed for non-profits to easily create, promote, process and control every aspect of their auction or live event.
-                  </p>
-                  <%= link_to "Learn more", "auction-manager/index.html", class: "btn btn-dark" %>
-                </div>
-                <div class="image">
-                  <%= image_tag("biddingforgood/platform-dashboard-thumb.png", alt:"", class:"responsive", height: "250", width: "350") %>
-                </div>
-              </div>
-            </div>
+      <p>
+        The BiddingForGood portal is where all the non-profit organizations that are running auctions are aggregated into one place that 1.7M cause minded bidders use to support charities they care about.
+      </p>
+    </div>
+  </div>
+  <div class="browser-mockup">
+    <div class="tool-bar">
+      <div class="buttons"></div>
+    </div>
+    <figure>
+      <%= image_set_tag "biddingforgood/portal-home_1200w.png", {
+        "biddingforgood/portal-home_320w.png" => "320w",
+        "biddingforgood/portal-home_565w.png" => "565w",
+        "biddingforgood/portal-home_767w.png" => "767w",
+        "biddingforgood/portal-home_928w.png" => "928w",
+        "biddingforgood/portal-home_1068w.png" => "1068w",
+        "biddingforgood/portal-home_1200w.png" => "1200w"},
+        sizes: "(max-width: 1200px) 100vw, 1200px",
+        alt: "Screen shot of BiddingForGood  homepage design",
+        class: "responsive" %>
+    </figure>
+  </div>
+ <h3 class="text-center">Item Category</h3>
+  <div class="browser-mockup">
+    <div class="tool-bar">
+      <div class="buttons"></div>
+    </div>
+    <figure>
+      <%= image_set_tag "biddingforgood/portal-item-category_1200w.png", {
+        "biddingforgood/portal-item-category_320w.png" => "320w",
+        "biddingforgood/portal-item-category_561w.png" => "561w",
+        "biddingforgood/portal-item-category_752w.png" => "752w",
+        "biddingforgood/portal-item-category_919w.png" => "919w",
+        "biddingforgood/portal-item-category_1031w.png" => "1031w",
+        "biddingforgood/portal-item-category_1200w.png" => "1200w"},
+        sizes: "(max-width: 1200px) 100vw, 1200px",
+        alt: "Screen shot of BiddingForGood tickets item catgory page design",
+        class: "responsive" %>
+    </figure>
+  </div>
+  <h3 class="text-center">Item Bid</h3>
+  <div class="browser-mockup">
+    <div class="tool-bar">
+      <div class="buttons"></div>
+    </div>
+   <figure>
+      <%= image_set_tag "biddingforgood/portal-item-bid_1200w.png", {
+        "biddingforgood/portal-item-bid_320w.png" => "320w",
+        "biddingforgood/portal-item-bid_558w.png" => "558w",
+        "biddingforgood/portal-item-bid_749w.png" => "749w",
+        "biddingforgood/portal-item-bid_909w.png" => "909w",
+        "biddingforgood/portal-item-bid_1036w.png" => "1036w",
+        "biddingforgood/portal-item-bid_1200w.png" => "1200w"},
+        sizes: "(max-width: 1200px) 100vw, 1200px",
+        alt: "Screen shot of BiddingForGood item bid page design",
+        class: "responsive" %>
+    </figure>
+  </div>
+  <div class="visit-site" style="margin: 1rem 0 2rem 0; text-align: center">
+    <%= link_to "Visit Site", "https://www.biddingforgood.com/auction/biddingforgood.action", class: "btn btn-dark", target: "_blank" %>
+  </div>
+  <h2 class="text-center">
+    Auction Manager
+  </h2>
+  <div class="summary full-bleed">
+    <div class="container">
+      <p>
+        The Auction Manager encompasses the design of 72 distinct features that enable non-profit organizations to easily manage their event, items, donors, promotion and auction close out.
+      </p>
+    </div>
+  </div>
+  <h3 class="text-center">Dashboard</h3>
+  <div class="browser-mockup">
+    <div class="tool-bar">
+      <div class="buttons"></div>
+    </div>
+    <figure>
+      <%= image_set_tag "biddingforgood/platform-dashboard_1200w.png", {
+        "biddingforgood/platform-dashboard_320w.png" => "320w",
+        "biddingforgood/platform-dashboard_551w.png" => "551w",
+        "biddingforgood/platform-dashboard_733w.png" => "733w",
+        "biddingforgood/platform-dashboard_889w.png" => "889w",
+        "biddingforgood/platform-dashboard_1017w.png" => "1017w",
+        "biddingforgood/platform-dashboard_1200w.png" => "1200w"},
+        sizes: "(max-width: 1200px) 100vw, 1200px",
+        alt: "Screen shot of BiddingForGood auction manager dashboard page design",
+        class: "responsive" %>
+    </figure>
+  </div>
+  <h3 class="text-center">Homepage: Auction Open</h3>
+  <div class="browser-mockup">
+    <div class="tool-bar">
+      <div class="buttons"></div>
+    </div>
+    <figure>
+      <%= image_set_tag "biddingforgood/platform-auction-home_1200w.png", {
+        "biddingforgood/platform-auction-home_320w.png" => "320w",
+        "biddingforgood/platform-auction-home_562w.png" => "562w",
+        "biddingforgood/platform-auction-home_754w.png" => "754w",
+        "biddingforgood/platform-auction-home_920w.png" => "920w",
+        "biddingforgood/platform-auction-home_1017w.png" => "1017w",
+        "biddingforgood/platform-auction-home_1200w.png" => "1200w"},
+        sizes: "(max-width: 1200px) 100vw, 1200px",
+        alt: "Screen shot of BiddingForGood auction manager non-profit event homepage page design",
+        class: "responsive" %>
+    </figure>
+  </div>
+  <h3 class="text-center">Auction Colors</h3>
+  <div class="browser-mockup">
+    <div class="tool-bar">
+      <div class="buttons"></div>
+    </div>
+    <figure>
+      <%= image_set_tag "biddingforgood/platform-auction-colors_1200w.png", {
+        "biddingforgood/platform-auction-colors_320w.png" => "320w",
+        "biddingforgood/platform-auction-colors_560w.png" => "560w",
+        "biddingforgood/platform-auction-colors_752w.png" => "752w",
+        "biddingforgood/platform-auction-colors_918w.png" => "918w",
+        "biddingforgood/platform-auction-colors_1022w.png" => "1022w",
+        "biddingforgood/platform-auction-colors_1200w.png" => "1200w"},
+        sizes: "(max-width: 1200px) 100vw, 1200px",
+        alt: "Screen shot of BiddingForGood auction manager auction colors page design",
+        class: "responsive" %>
+    </figure>
+  </div>
+  <blockquote style="margin: 2rem 0 4rem 0">
+    <p>
+      A definite highlight is how user-friendly the auction tools are. Each year it gets easier and the auction gets bigger. We’ve exceeded our goals every auction.
+    </p>
+    <footer>- <cite>Kate Williams, Northern Forest Canoe Trail</cite></footer>
+  </blockquote>
+  <h2 class="text-center">
+    Auction Homepage
+  </h2>
+  <div class="summary full-bleed">
+    <div class="container">
+      <p>
+        Non-profits use the auction manager to create a branded homepage to feature items up for bid, sell tickets, promote the live event and showcase sponsors.
+      </p>
+    </div>
+  </div>
+  <div class="browser-mockup">
+    <div class="tool-bar">
+      <div class="buttons"></div>
+    </div>
+    <figure>
+      <%= image_set_tag "biddingforgood/auction-home-1_1200w.png", {
+        "biddingforgood/auction-home-1_320w.png" => "320w",
+        "biddingforgood/auction-home-1_550w.png" => "550w",
+        "biddingforgood/auction-home-1_742w.png" => "742w",
+        "biddingforgood/auction-home-1_873w.png" => "873w",
+        "biddingforgood/auction-home-1_1018w.png" => "1018w",
+        "biddingforgood/auction-home-1_1200w.png" => "1200w"},
+        sizes: "(max-width: 1200px) 100vw, 1200px",
+        alt: "Screen shot of the River School auction homepage",
+        class: "responsive" %>
+    </figure>
+  </div>
+  <div class="display-none display-md-block">
+    <div class="col-3">
+      <figure class="image box-shadow border border-radius" style="margin-bottom: 4rem">
+        <%= image_set_tag "biddingforgood/auction-home-2_1200w.png", {
+          "biddingforgood/auction-home-2_320w.png" => "320w",
+          "biddingforgood/auction-home-2_554w.png" => "554w",
+          "biddingforgood/auction-home-2_744w.png" => "744w",
+          "biddingforgood/auction-home-2_898w.png" => "898w",
+          "biddingforgood/auction-home-2_1018w.png" => "1018w",
+          "biddingforgood/auction-home-2_1200w.png" => "1200w"},
+          sizes: "(max-width: 1200px) 100vw, 1200px",
+          alt: "Screen shot of non-profit This Time Tommorow auction homepage",
+          class: "responsive" %>
+      </figure>
+      <figure class="image box-shadow border border-radius" style="margin-bottom: 4rem">
+        <%= image_set_tag "biddingforgood/auction-home-3_1200w.png", {
+          "biddingforgood/auction-home-3_320w.png" => "320w",
+          "biddingforgood/auction-home-3_554w.png" => "554w",
+          "biddingforgood/auction-home-3_744w.png" => "744w",
+          "biddingforgood/auction-home-3_898w.png" => "898w",
+          "biddingforgood/auction-home-3_1018w.png" => "1018w",
+          "biddingforgood/auction-home-3_1200w.png" => "1200w"},
+          sizes: "(max-width: 1200px) 100vw, 1200px",
+          alt: "Screen shot of Writer Coach Connection auction homepage",
+          class: "responsive" %>
+      </figure>
+      <figure class="image box-shadow border border-radius" style="margin-bottom: 4rem">
+        <%= image_set_tag "biddingforgood/auction-home-4_1200w.png", {
+          "biddingforgood/auction-home-4_320w.png" => "320w",
+          "biddingforgood/auction-home-4_560w.png" => "560w",
+          "biddingforgood/auction-home-4_744w.png" => "744w",
+          "biddingforgood/auction-home-4_901w.png" => "901w",
+          "biddingforgood/auction-home-4_1033w.png" => "1033w",
+          "biddingforgood/auction-home-4_1200w.png" => "1200w"},
+          sizes: "(max-width: 1200px) 100vw, 1200px",
+          alt: "Screen shot of Tufts University School of Dental Medicine auction homepage",
+          class: "responsive" %>
+      </figure>
+    </div>
+  </div>
+  <h2 class="text-center">Result</h2>
+  <div class="result">
+    <p>
+      The easy to use design and functionality of the BiddingForGood products helped to establish the company as the leading cause related e-commerce fundraising platform.
+    </p>
+  </div>
+  <div class="work-nav full-bleed background-alt">
+    <div class="section-content">
+      <div class="container work-nav">
+        <div class="col-3">
+          <div class="prev">
+            <%= link_to "Back", "/work/frontstream/index.html", class: "chevron left" %>
+            <h6 class="display-none display-sm-block">FrontStream</h6>
           </div>
-          <div class="flex row">
-            <div class="tile tile-rounded">
-              <div class="tile-content">
-                <div class="text text-center flipped">
-                  <h3>
-                    Auction Catalog
-                  </h3>
-                  <p>
-                    Non-profits can create a branded homepage to feature items, sell tickets, promote the live event and showcase sponsors.
-                  </p>
-                  <%= link_to "Learn more", "biddingforgood/index.html", class: "btn btn-dark" %>
-                </div>
-                <div class="image">
-                  <%= image_tag("biddingforgood/auction-home-thumb.png", alt:"", class:"responsive", height: "250", width: "350") %>
-                </div>
-              </div>
-            </div>
+          <div class="nav-home">
+            <%= link_to "Work", "/work/index.html" %>
           </div>
-          <div class="flex row">
-            <div class="tile tile-rounded">
-              <div class="tile-content">
-                <div class="text text-center">
-                  <h3>
-                    Portal
-                  </h3>
-                  <p>
-                    Non-profit auction items aggregated into one place where 1.7M cause minded bidders can support charities they care about.
-                  </p>
-                  <%= link_to "Learn more", "/biddingforgood/index.html", class: "btn btn-dark" %>
-                </div>
-                <div class="image">
-                  <%= image_tag("biddingforgood/portal-home-thumb.png", alt:"", class:"responsive", height: "250", width: "350") %>
-                </div>
-              </div>
-            </div>
+          <div class="next">
+            <%= link_to "Next", "/work/muzit/index.html", class: "chevron right" %>
+            <h6 class="display-none display-sm-block">Muzit</h6>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   </div>
 </div>
