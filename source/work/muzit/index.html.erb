@@ -7,14 +7,14 @@ bodyClass: work
 <div class="container">
   <header class="hero full-bleed">
     <figure>
-      <%= image_set_tag "muzit/muzit-hero_2246w.jpg", {
+      <%= image_set_tag "muzit/muzit-hero_2000w.jpg", {
       "muzit/muzit-hero_320w.jpg" => "320w",
-      "muzit/muzit-hero_393w.jpg" => "393w",
-      "muzit/muzit-hero_774w.jpg" => "774w",
-      "muzit/muzit-hero_1118w.jpg" => "1118w",
-      "muzit/muzit-hero_1657w.jpg" => "1657w",
-      "muzit/muzit-hero_2246w.jpg" => "2246w"},
-      sizes: "(max-width: 2246px) 100vw, 2246px",
+      "muzit/muzit-hero_850w.jpg" => "850w",
+      "muzit/muzit-hero_1212w.jpg" => "1212w",
+      "muzit/muzit-hero_1547w.jpg" => "1547w",
+      "muzit/muzit-hero_1865w.jpg" => "1865w",
+      "muzit/muzit-hero_2000w.jpg" => "2000w"},
+      sizes: "(max-width: 2000px) 100vw, 2000px",
       alt: "Screenshot of the Muzit title details page displayed on the desktop",
       class: "responsive" %>
     </figure>
@@ -417,4 +417,24 @@ bodyClass: work
       The management team was thrilled to have a professional looking design and responsive mobile experience for the first time.
     </p>
   </div>
+  <div class="work-nav full-bleed background-alt">
+    <div class="section-content">
+      <div class="container work-nav">
+        <div class="col-3">
+          <div class="prev">
+            <%= link_to "Back", "/work/biddingforgood/index.html", class: "chevron left" %>
+            <h6 class="display-none display-sm-block">BiddingForGood</h6>
+          </div>
+          <div class="nav-home">
+            <%= link_to "Work", "/work/index.html" %>
+          </div>
+          <div class="next">
+            <%= link_to "Next", "/work/frontstream/index.html", class: "chevron right" %>
+            <h6 class="display-none display-sm-block">Frontstream</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
