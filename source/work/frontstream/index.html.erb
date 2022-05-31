@@ -5,10 +5,19 @@ metaKeywords:
 bodyClass: work
 ---
 <div class="container">
-  <header>
-    <div class="hero full-bleed">
-      <%= image_tag("hero-panorama.png", alt:"Panorama", class:"responsive") %>
-    </div>
+  <header class="hero full-bleed">
+    <figure>
+      <%= image_set_tag "work/frontstream_2000w.jpg", {
+        "work/frontstream_320w.jpg" => "320w",
+        "work/frontstream_939w.jpg" => "939w",
+        "work/frontstream_1404w.jpg" => "1404w",
+        "work/frontstream_1638w.jpg" => "1638w",
+        "work/frontstream_1924w.jpg" => "1924w",
+        "work/frontstream_2000w.jpg" => "2000w"},
+        sizes: "(max-width: 2000px) 100vw, 2000px",
+        alt: "A person's hands holding a mobile phone with BiddingForGood mobile site design on the screen",
+        class: "responsive" %>
+    </figure>
   </header>
   <h1 class="header-underline">
     FrontStream
@@ -25,72 +34,162 @@ bodyClass: work
         <div>
           <h3>Role</h3>
           <ul>
-            <li>Wireframe</li>
+            <li>Wireframes</li>
+            <li>UI Design</li>
             <li>Rapid Prototyping</li>
-            <li></li>
+            <li>Interactive Design</li>
+            <li>Responsive Web Design</li>
           </ul>
         </div>
         <div>
           <h3>Tech</h3>
           <ul>
             <li>HTML</li>
+            <li>CSS</li>
             <li>SASS</li>
             <li>Bootstrap</li>
             <li>JQuery</li>
-            <li>Angular</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
   <p class="intro">
-    FrontStream acquired BiddingForGood in 2015 to add online auction and donation management capabilities to their product line. I continued my responsibilites of doing design and delopment focusing on rebranding the BiddingForGood properties and redesign of a donation request application.
+    FrontStream acquired BiddingForGood in 2015 to add the leader in online auction and event management to their fundraising platform. I continued my responsibilites doing front end design and development that included rebranding the BiddingForGood related web sites to reflect Fronstream's style guide and leading the redesign of BiddingForGood's mobile auction site.
   </p>
-  <div class="container">
-    <div class="col-2">
-      <figure class="image">
-        <%= image_tag("work-panorama.png", alt:"Panorama", class:"responsive") %>
-      </figure>
-      <div class="description">
-        <h3>
-          Customizable Dashboard
-        </h3>
-        <p>
-          At the core of Panorama is a customizable dashboard where the data, from FrontStream sites, is aggregated. This allows clients a very powerful way to visualize, anaylize and share their data in one place........
-        </p>
+  <h2 class="text-center">
+    Original Mobile Design
+  </h2>
+  <div class="col-2">
+    <div class="image-header-text">
+      <h6 class="text-center">
+        Mobile Login
+      </h6>
+      <div class="phone-mockup">
+        <%= image_tag("frontstream/biddingforgood-mobile-v1-login.png", alt: "Image depicting a wireframe of the mobile navigation menu design", class: "responsive max-width", height: "290", width: "247") %>
+      </div>
+    </div>
+    <div class="image-header-text">
+      <h6 class="text-center">
+        Auction Home
+      </h6>
+      <div class="phone-mockup">
+        <%= image_tag("frontstream/biddingforgood-mobile-v1-auction-home.png", alt: "Image depicting a wireframe of the mobile navigation menu design", class: "responsive max-width", height: "290", width: "247") %>
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="col-2 reverse">
-      <figure class="image">
-        <%= image_tag("panorama-new-widget.png", alt:"Panorama Create New widget", class:"responsive") %>
-      </figure>
-      <div class="description">
-        <h3>
-          Create Widgets
-        </h3>
-        <p>
-          Customizable widgets can be created based on data sourced from each FrontStream Web site and can be manipulated so clients can gain insight into their overall fundraising activities and decision making.
-        </p>
-      </div>
+  <h2 class="text-center">
+    Redesign Process
+  </h2>
+  <div class="summary full-bleed">
+    <div class="container">
+      <p>
+        I met with individual members of the management, engineering, sales, marketing and client services teams to gain their perspective of the issues they perceived the current mobile site had in terms of design and usability. Based on the meetings we were able to formulate the objectives and priorities.
+      </p>
     </div>
   </div>
-  <div class="container">
-    <div class="col-2">
-      <figure class="image">
-        <%= image_tag("panorama-edit-widget.png", alt:"Panorama Edit Widget", class:"responsive") %>
-      </figure>
-      <div class="description">
-        <h3>
-          Edit Widgets
-        </h3>
-        <p>
-          Client's can easily modify existing widgets to show a different representation of the data.
-        </p>
-      </div>
+  <h3>
+    Mobile Design Objective
+  </h3>
+  <p>
+    Create &quot;Bidding for Dummies&quot; experience. Assume attendee's know nothing about transacting on mobile devices and <strong>has no time</strong> to figure things out.
+  </p>
+  <h4>
+    Mobile Design Priorities
+  </h4>
+  <ol>
+    <li>Get auction home page right.</li>
+    <li>What are the next most visited pages that can be improved.</li>
+    <li>Determine how big overall font-sizes can be and increase the size to better improve legibility for older attendees.</li>
+    <li>Solve the confusion over the "waffle" icon navigation.</li>
+    <li>Make "Bid Alerts" readily apprarent and understandable.</li>
+  </ol>
+
+   <h2 class="text-center">
+    Wireframes
+  </h2>
+
+  <h3 class="text-center">
+    Main Menu
+  </h3>
+  <div class="summary full-bleed">
+    <div class="container">
+      <p>
+        As the first step I created a wireframe to address the confusion over the "waffle" icon navigation. The problem was users didn't know what the icon represented or what it does. As a result they had difficulty figuring out how to login or register for the auction. To solve this I created a menu bar exposing the critical interactions for both the logged in and out states using iconography and text to indicate what each icon represents.
+      </p>
     </div>
   </div>
+  <%= image_tag("frontstream/biddingforgood-mobile-wireframe-menu.png", alt: "Image depicting a wireframe of the mobile navigation menu design", class: "responsive", height: "660", width: "1262") %>
+  <h4 class="text-center">Auction Home Wireframe</h4>
+  <div class="summary full-bleed">
+    <div class="container">
+      <p>
+        The next step was to &quot;get the auction homepage right&quot;. To reflect a more modern mobile design approach I replaced the buttons and once again employed the use of iconography and text to indicate what each icon represents. The search was also moved from the top into the main screen so users can instantly search for items.
+      </p>
+    </div>
+  </div>
+  <%= image_tag("frontstream/biddingforgood-mobile-wireframe-home.png", alt: "Image depicting a wireframe of the mobile home screen design", class: "responsive", height: "660", width: "1262") %>
+  <h2 class="text-center">
+    Mobile Redesign
+  </h2>
+  <p>
+    I presented the wireframe design concepts to the product manager and executive team who collectively approved of design approach having met both the objective and consideration of the priorities and to start coding the redesign.
+  </p>
+  <h3 class="text-center">
+    Auction Home
+  </h3>
+  <div class="summary full-bleed">
+    <div class="container">
+      <p>
+        A badge was added to the &quot;Messages&quot; icon to indicate the user has received a winning or outbid message and an alert notification is also displayed. The body font was increased to make the text more legibile. Featured items and sponsorship images were also added in the course of the redesign.
+      </p>
+    </div>
+  </div>
+  <div class="redesign">
+    <div class="phone-mockup">
+      <video autoplay muted preload loop playsinline width="222" height="" poster="../../images/frontstream/poster-mobile-home.png" class="lazy">
+        <source data-src="../../video/biddingforgood-mobile-home.mp4" type="video/mp4">
+        <source data-src="../../video/biddingforgood-mobile-home.webm" type="video/webm">
+      </video>
+    </div>
+  </div>
+  <h3 class="text-center">
+    Featured Item
+  </h3>
+  <div class="summary full-bleed">
+    <div class="container">
+      <p>
+        The item bid page was updated to include multiple item images. Tapping the image displays a larger responsive version.
+      </p>
+    </div>
+  </div>
+  <div class="phone-mockup">
+    <video autoplay muted preload loop playsinline width="222" height="" poster="../../images/frontstream/poster-mobile-home.png" class="lazy">
+      <source data-src="../../video/biddingforgood-mobile-item.mp4" type="video/mp4">
+      <source data-src="../../video/biddingforgood-mobile-item.webm" type="video/webm">
+    </video>
+  </div>
+  <h3 class="text-center">
+    Navigation
+  </h3>
+  <div class="summary full-bleed">
+    <div class="container">
+      <p>
+        A hamburger icon was added above the menu bar allowing users to navigate from other pages without having to return to the homepage screen.
+      </p>
+    </div>
+  </div>
+  <div class="phone-mockup">
+    <video autoplay muted preload loop playsinline width="222" height="" poster="../../images/frontstream/poster-mobile-home.png" class="lazy">
+      <source data-src="../../video/biddingforgood-mobile-nav.mp4" type="video/mp4">
+      <source data-src="../../video/biddingforgood-mobile-nav.webm" type="video/webm">
+    </video>
+  </div>
+
+  <h2 class="text-center">
+    Results
+  </h2>
+
   <div class="work-nav full-bleed background-alt">
     <div class="section-content">
       <div class="container work-nav">
