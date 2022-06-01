@@ -56,15 +56,18 @@ header {
 // Rotating Words
 // ==============================
 
-.rw-wrapper {
+.rotating-wrapper {
   position: relative;
 }
 
-.rw-sentence {
+h4.rotating-sentence {
+  font-size: 1.80rem;
   margin: 4rem 0;
   padding-bottom: 3rem;
+
   @media only screen and (min-width: 48em) {
     padding-bottom: 0rem;
+
   }
 
   span {
@@ -72,15 +75,17 @@ header {
   }
 }
 
-.rw-words {
+.rotating-words {
   @media only screen and (min-width: 48em) {
     display: inline;
     text-indent: .25em;
   }
 }
 
-.rw-word {
+.rotating-word {
+
   span {
+    font-weight: 900 !important;
     position: absolute;
     opacity: 0;
     overflow: hidden;
