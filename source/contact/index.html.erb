@@ -15,7 +15,7 @@ bodyClass:
   <form class="contact" action="/cgi-bin/FormMail.index.pl" method="post">
     <fieldset>
       <div class="field">
-        <input id="name" minlength="2" type="text" name="name" placeholder="name" required>
+        <input id="name" type="text" name="name" placeholder="name" minlength="2" required>
         <label for="name" class="required">Name</label>
       </div>
       <div class="field">
@@ -23,7 +23,7 @@ bodyClass:
         <label for="email" class="required">E-Mail</label>
       </div>
       <div class="field">
-        <textarea id="message" placeholder="Message" required></textarea>
+        <textarea id="message" name="message" placeholder="Message" required></textarea>
         <label for="message" class="required">Message</label>
       </div>
       <div class="field captcha">
