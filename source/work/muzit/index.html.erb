@@ -6,8 +6,23 @@ bodyClass: work
 ---
 <div class="container">
   <header class="hero full-bleed">
-    <figure>
-      <%= image_set_tag "muzit/muzit-hero_2000w.jpg", {
+    <div class="display-md-none">
+      <figure>
+        <%= image_set_tag "work/muzit_2000w.jpg", {
+            "work/muzit_320w.jpg" => "320w",
+            "work/muzit_821w.jpg" => "821w",
+            "work/muzit_1163w.jpg" => "1163w",
+            "work/muzit_1326w.jpg" => "1326w",
+            "work/muzit_1497w.jpg" => "1497w",
+            "work/muzit_2000w.jpg" => "2000w"},
+            sizes: "(max-width: 2000px) 100vw, 2000px",
+            alt: "A person's hands a holding mobile phone with Muzit title details on the screen",
+            class: "responsive" %>
+      </figure>
+    </div>
+    <div class="display-none display-md-block">
+      <figure>
+        <%= image_set_tag "muzit/muzit-hero_2000w.jpg", {
       "muzit/muzit-hero_320w.jpg" => "320w",
       "muzit/muzit-hero_850w.jpg" => "850w",
       "muzit/muzit-hero_1212w.jpg" => "1212w",
@@ -15,9 +30,10 @@ bodyClass: work
       "muzit/muzit-hero_1865w.jpg" => "1865w",
       "muzit/muzit-hero_2000w.jpg" => "2000w"},
       sizes: "(max-width: 2000px) 100vw, 2000px",
-      alt: "Screenshot of the Muzit title details page displayed on the desktop",
+      alt: "Screenshot of the Muzit title details page displayed on a laptop",
       class: "responsive" %>
-    </figure>
+      </figure>
+    </div>
   </header>
   <h1 class="header-underline">
     Muzit
