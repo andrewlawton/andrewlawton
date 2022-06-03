@@ -118,18 +118,13 @@ bodyClass: about
         <p>
           Check out my resume to learn more about my background and experience.
         </p>
-        <a href="#" class="btn btn-outline">Resume</a>
+        <%= link_to "Resume", "/docs/andrew-lawton-resume.pdf", class: "btn btn-outline" %>
       </div>
     </div>
   </section>
   <section class="full-bleed background-alt">
-    <div class="section-content">
-      <div class="container">
-        <div class="text-center">
-          <h3>Drop me a line...</h3>
-          <a href="#" class="btn btn-dark">Contact Me</a>
-        </div>
-      </div>
+    <div class="contact">
+      <%= partial "partials/contact" %>
     </div>
   </section>
 </div>
