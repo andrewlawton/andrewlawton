@@ -1,11 +1,10 @@
 //contact
 
-section {
-  &.contact {
-    margin: 5rem auto;
-    text-align: center;
-    h3 {
-      margin: 0 0 3rem;
-    }
+.contact {
+  margin: 5rem auto;
+  text-align: center;
+
+  h3 {
+    margin: 0 0 3rem;
   }
 }
