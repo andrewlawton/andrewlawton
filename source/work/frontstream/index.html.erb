@@ -28,7 +28,7 @@ bodyClass: work
         <div>
           <h3>Overview</h3>
           <p>
-            FrontStream provides an all-in-one digital fundraising platform for that enable philanthropic corporations and nonprofit organizations to manage, plan, process and promote their fundraising events.
+            FrontStream provides an all-in-one digital fundraising platform that enables nonprofit organizations to manage, plan, process and promote their online fundraising events.
           </p>
         </div>
         <div>
@@ -55,8 +55,18 @@ bodyClass: work
     </div>
   </section>
   <p class="intro">
-    FrontStream acquired BiddingForGood in 2015 to add the leader in online auction and event management to their fundraising platform. I continued my responsibilites doing front end design and development that included rebranding the BiddingForGood related web sites to reflect Fronstream's style guide and leading the redesign of BiddingForGood's mobile auction site.
+    FrontStream acquired BiddingForGood, the leading online auction and event management company, in 2015 to expand and improve the FrontStream platform. As part of the acquisition I continued my role as Front End Designer and Developer responsible for rebranding all  BiddingForGood web sites to reflect the FrontStream style guide. In addition, I led the redesign of the BiddingForGood mobile auction site.
   </p>
+  <h2 class="text-center">
+    Mobile Auction Redesign
+  </h2>
+  <div class="summary full-bleed">
+    <div class="container">
+      <p>
+        To kick-off the redesign I met with individual members of the management, engineering, sales, marketing and client services teams to gather their insights and perspectives on the issues the current mobile site had with respect to design and usability. Based on their collective feedback I derived the key objective and priorities that needed to be addressed in the redesign.
+      </p>
+    </div>
+  </div>
   <h2 class="text-center">
     Original Mobile Design
   </h2>
@@ -78,62 +88,54 @@ bodyClass: work
       </div>
     </div>
   </div>
-  <h2 class="text-center">
-    Redesign Process
-  </h2>
-  <div class="summary full-bleed">
-    <div class="container">
-      <p>
-        I met with individual members of the management, engineering, sales, marketing and client services teams to gain their perspective of the issues they perceived the current mobile site had in terms of design and usability. Based on the meetings we were able to formulate the objectives and priorities.
-      </p>
-    </div>
-  </div>
-  <h3>
+  <h3 class="text-center">
     Mobile Design Objective
   </h3>
   <p>
-    Create &quot;Bidding for Dummies&quot; experience. Assume attendee's know nothing about transacting on mobile devices and <strong>has no time</strong> to figure things out.
+    Create a mobile experience for auction attendees based on the assumption that they know nothing about transacting on mobile devices and have no time to figure things out.
   </p>
-  <h4>
+  <h3 class="text-center">
     Mobile Design Priorities
-  </h4>
+  </h3>
   <ol>
-    <li>Get auction home page right.</li>
-    <li>What are the next most visited pages that can be improved.</li>
-    <li>Determine how big overall font-sizes can be and increase the size to better improve legibility for older attendees.</li>
-    <li>Solve the confusion over the "waffle" icon navigation.</li>
-    <li>Make "Bid Alerts" readily apprarent and understandable.</li>
+    <li>Address the confusion over the &quot;waffle&quot; icon navigation.</li>
+    <li>Make the  &quot;Bid Alerts&quot; functionality readily apparent and understandable.</li>
+    <li>Ensure that the auction home page is easy to use and engages visitors.</li>
+    <li>Identify the next most visited pages that can be improved.</li>
+    <li>Determine the impact of making the font size larger to improve legibility for older attendees.</li>
   </ol>
-
-   <h2 class="text-center">
+  <h2 class="text-center">
     Wireframes
   </h2>
-
   <h3 class="text-center">
     Main Menu
   </h3>
   <div class="summary full-bleed">
     <div class="container">
       <p>
-        As the first step I created a wireframe to address the confusion over the "waffle" icon navigation. The problem was users didn't know what the icon represented or what it does. As a result they had difficulty figuring out how to login or register for the auction. To solve this I created a menu bar exposing the critical interactions for both the logged in and out states using iconography and text to indicate what each icon represents.
+        As the first step, I created a wireframe to address the confusion created by the &quot;waffle&quot; icon navigation. Usability testing showed that users did not know what the icon represented. As a result they had difficulty figuring out how to login or register for the auction. To solve this problem, I designed a menu bar that exposed the critical interactions for both the logged-out and logged-in states. The new menu incorporated both iconography and text to clearly indicate what each icon represents.
       </p>
     </div>
   </div>
-  <%= image_tag("frontstream/biddingforgood-mobile-wireframe-menu.png", alt: "Image depicting a wireframe of the mobile navigation menu design", class: "responsive", height: "660", width: "1262") %>
+  <div class="wireframe">
+    <%= image_tag("frontstream/biddingforgood-mobile-wireframe-menu.png", alt: "Image depicting a wireframe of the mobile navigation menu design", class: "responsive", height: "660", width: "638") %>
+  </div>
   <h4 class="text-center">Auction Home Wireframe</h4>
   <div class="summary full-bleed">
     <div class="container">
       <p>
-        The next step was to &quot;get the auction homepage right&quot;. To reflect a more modern mobile design approach I replaced the buttons and once again employed the use of iconography and text to indicate what each icon represents. The search was also moved from the top into the main screen so users can instantly search for items.
+        The next step was to &quot;get the auction homepage right&quot;. To reflect a more modern mobile design approach, I replaced the buttons with iconography and text to indicate what each icon represents. The search was also moved from the top into the main screen so users can instantly search for items.
       </p>
     </div>
   </div>
-  <%= image_tag("frontstream/biddingforgood-mobile-wireframe-home.png", alt: "Image depicting a wireframe of the mobile home screen design", class: "responsive", height: "660", width: "1262") %>
+  <div class="wireframe">
+    <%= image_tag("frontstream/biddingforgood-mobile-wireframe-home.png", alt: "Image depicting a wireframe of the mobile home screen design", class: "responsive", height: "1227", width: "628") %>
+  </div>
   <h2 class="text-center">
     Mobile Redesign
   </h2>
   <p>
-    I presented the wireframe design concepts to the product manager and executive team who collectively approved of design approach having met both the objective and consideration of the priorities and to start coding the redesign.
+    I presented the wireframe design concepts to Product Management and the Executive Team who collectively agreed the design approach met both the objective and priorities and signed-off on starting to code the design.
   </p>
   <h3 class="text-center">
     Auction Home
@@ -141,7 +143,7 @@ bodyClass: work
   <div class="summary full-bleed">
     <div class="container">
       <p>
-        A badge was added to the &quot;Messages&quot; icon to indicate the user has received a winning or outbid message and an alert notification is also displayed. The body font was increased to make the text more legibile. Featured items and sponsorship images were also added in the course of the redesign.
+        A badge was added to the &quot;Messages&quot; icon to indicate the user has received a winning or outbid message and an alert notification is also displayed. The body font size was increased to make the text more legible. Featured items and sponsorship images were also added in the course of the redesign.
       </p>
     </div>
   </div>
@@ -189,7 +191,12 @@ bodyClass: work
   <h2 class="text-center">
     Results
   </h2>
-
+  <blockquote style="margin: 2rem 0 4rem 0">
+    <p>
+      Employing mobile bidding during our live event felt radically different. In the end, we garnered 700 bids and raised nearly three times the revenue of last year's auction. The results speak volumes!
+    </p>
+    <footer>- <cite>Caroline Haskett, The Wellington School</cite></footer>
+  </blockquote>
   <div class="work-nav full-bleed background-alt">
     <div class="section-content">
       <div class="container work-nav">
