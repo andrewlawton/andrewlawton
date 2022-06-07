@@ -18,10 +18,13 @@ header {
   }
 }
 
-.tile {
-  h5 {
-    margin: 0 0 1rem 0;
-    white-space: nowrap;
+.tiles {
+  padding: 3rem 0;
+  .tile {
+    h5 {
+      margin: 0 0 1rem 0;
+      white-space: nowrap;
+    }
   }
 }
 
