@@ -5,27 +5,28 @@ var menu = document.querySelector('#menu');
 var menuList = document.querySelector('.menu-list');
 
 menuIcon.addEventListener('click', function() {
-    if (menu.classList.contains('expanded')) {
-        this.setAttribute('aria-expanded', 'false');
-        menu.classList.remove('expanded');
-    } else {
-        this.setAttribute('aria-expanded', 'true');
-        menu.classList.add('expanded');
+  if (menu.classList.contains('expanded')) {
+      this.setAttribute('aria-expanded', 'false');
+      menu.classList.remove('expanded');
+  } else {
+      this.setAttribute('aria-expanded', 'true');
+      menu.classList.add('expanded');
 
-        //menuItems[0].focus();
-    }
+      //menuItems[0].focus();
+  }
 });
 
 // set nav menu active class
 
+const currentLocation = location.href;
 const menuItem = document.querySelectorAll('nav .menu-list a');
+const menuLength = menuItem.length;
 
-menuItem.forEach(link => {
-  if (link.getAttribute('href') === (location.pathname)) {
-    link.classList.add("active")
+for (let i = 0; i<menuLength; i++) {
+  if(menuItem[i].href === currentLocation) {
+    menuItem[i].className = "active"
   }
-
-})
+}
 
 const activeLink = document.querySelector('nav .menu-list a');
 
