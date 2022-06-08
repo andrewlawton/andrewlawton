@@ -18,8 +18,19 @@ header {
   }
 }
 
+.about {
+  h1 {
+    margin: 3rem 0 0 0;
+  }
+}
+
+
 .tiles {
   padding: 3rem 0;
+
+  h2 {
+    margin: 0 0 3rem 0;
+  }
 
   .tile {
     h5 {
@@ -27,6 +38,10 @@ header {
       white-space: nowrap;
     }
   }
+}
+
+.list-style-primary {
+  margin-bottom: 2rem;
 }
 
 // ==============================
