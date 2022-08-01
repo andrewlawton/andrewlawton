@@ -40,16 +40,20 @@ img.responsive {
 .video-container {
   position: relative;
   padding-top: 56.25%;
+
+  // border-radius: 0 0 6px 6px;
+  overflow: hidden;
+
+
 }
 
 .video {
+  height: auto;
   position: absolute;
   top: 0;
   left:0;
-  width: 100%;
-  height: 100%;
-  //object-fit: cover;
   object-fit: fill;
+  width: 100%;
 }
 
 main {
@@ -255,14 +259,9 @@ main {
 .browser-mockup {
   background: #fff;
   border-radius: 6px;
+  border: 1px solid #ccc;
   overflow: hidden;
   margin: 3rem 0;
-  border: 1px solid #ccc;
-
-  img,
-  video {
-    border-radius: 0 0 6px 6px;
-  }
 
   .tool-bar {
     height: 25px;
